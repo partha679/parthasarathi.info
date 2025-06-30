@@ -1,0 +1,38 @@
+---
+name: "Partha"
+navbar:
+  title: "Partha"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "About"
+      href: about.html
+    - text: "Academic"
+      menu:
+        - text: "Career"
+          href: career.html
+        - text: "Projects"
+          href: projects.html
+        - text: "Publications"
+          href: publications.html
+        - text: "Presentations"
+          href: presentations.html
+        - text: "Field trips"
+          href: field_trips.html
+    - text: "Non academic"
+      menu:
+        - text: "Photography"
+          href: photography.html
+        - text: "Youtube"
+          href: youtube.html
+        - text: "Social media"
+          href: Social_media.html
+    - text: "Contact"
+      href: Contact.html
+
+output:
+  html_document:
+    theme: cerulean
+    highlight: textmate
+    self_contained: false
+---

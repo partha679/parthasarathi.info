@@ -1,0 +1,86 @@
+---
+title: "Career"
+site: "index.html"
+output:
+  html_document:
+    theme: cerulean
+    highlight: textmate
+    self_contained: false
+---
+
+
+## Education & Research Timeline 🎓 
+
+
+  <!-- University of São Paulo -->
+  <div style="display: flex; align-items: center;">
+   <a href="https://www5.usp.br/" target="_blank">
+    <img src="Institute logos/usp.png" alt="USP Brazil" style="width: 60px; margin-right: 15px;">
+   </a>
+   <div>
+   <div><strong>University of São Paulo, Brazil</strong></div>
+   <div>Postdoc <span style="color: gray;">(2023–2025)</span></div>
+   </div>
+  </div>
+  
+  
+   <!-- PRL ahmedabad -->
+  <div style="display: flex; align-items: center;">
+   <a href="https://www.prl.res.in/" target="_blank">
+    <img src="Institute logos/prl.png" alt="USP Brazil" style="width: 60px; margin-right: 15px;">
+   </a>
+   <div>
+   <div><strong>Physical Research Laboratory, Ahmedabad</strong></div>
+   <div>Postdoc <span style="color: gray;">(2022–2023)</span></div>
+   </div>
+  </div>
+
+
+   <!-- PRL ahmedabad -->
+  <div style="display: flex; align-items: center;">
+   <a href="https://www.prl.res.in/" target="_blank">
+    <img src="Institute logos/iitgn.png" alt="USP Brazil" style="width: 60px; margin-right: 15px;">
+   </a>
+   <div>
+   <div><strong>Indian Institute of Technology, Gandhinagar</strong></div>
+   <div>PhD <span style="color: gray;">(2017–2022)</span></div>
+   </div>
+  </div>
+  
+  
+  <div style="display: flex; align-items: center;">
+   <a href="https://www.iitbbs.ac.in/" target="_blank">
+    <img src="Institute logos/iitbbs.png" alt="USP Brazil" style="width: 60px; margin-right: 15px;">
+   </a>
+   <div>
+   <div><strong>Indian Institute of Technology, Bhubaneswar</strong></div>
+   <div>MSc <span style="color: gray;">(2015-2017)</span></div>
+   </div>
+  </div>
+
+
+  <div style="display: flex; align-items: center;">
+   <a href="https://www.ravenshawuniversity.ac.in/" target="_blank">
+    <img src="Institute logos/rav.jpeg" alt="USP Brazil" style="width: 60px; margin-right: 15px;">
+   </a>
+   <div>
+   <div><strong>Ravenshaw University, Cuttack</strong></div>
+   <div>BSc <span style="color: gray;">(2012–2015)</span></div>
+   </div>
+  </div>
+
+<br> <br>
+
+## Academic Achievements 🏆 
+
+- **IIT-JAM (2015):** Secured All India Rank **58**
+- **DST-INSPIRE Scholarship (2012–2017):** Awarded for academic excellence
+- **GATE (2017):** Achieved All India Rank **267**
+- **CSIR-UGC NET – LS (Dec 2015):** Qualified with All India Rank **19**
+- **CSIR-UGC NET – JRF:**
+  - **June 2016:** All India Rank **16**
+  - **Dec 2016:** All India Rank **10**
+  - **Dec 2017:** All India Rank **103**
+- **IELTS (2017):** Scored **Band 7**
+- **Gold Medalist & Silver Medalist** of IIT Bhubaneswar
+- **Best MSc Project Award:** Recognized for outstanding research contribution

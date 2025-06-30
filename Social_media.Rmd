@@ -1,0 +1,60 @@
+---
+title: "Projects"
+site: "index.html"
+output:
+  html_document:
+    theme: cerulean
+    highlight: textmate
+    self_contained: false
+---
+
+
+---
+title: "Connect with Me"
+output:
+  html_document:
+    theme: cosmo
+    self_contained: false
+---
+
+<!-- Font Awesome for social icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<style>
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  .social-icons a {
+    color: #333;
+    font-size: 2em;
+    text-decoration: none;
+    margin: 0 20px; /* Adds space on left and right of each icon */
+    transition: color 0.3s;
+  }
+
+  .social-icons a:hover {
+    color: #007bff;
+  }
+</style>
+
+<div class="social-icons">
+  <a href="https://www.facebook.com/partha679" target="_blank"><i class="fab fa-facebook"></i></a>
+  <a href="https://twitter.com/partha679" target="_blank"><i class="fab fa-twitter"></i></a>
+  <a href="https://www.linkedin.com/in/partha679" target="_blank"><i class="fab fa-linkedin"></i></a>
+  <a href="https://www.instagram.com/partha679" target="_blank"><i class="fab fa-instagram"></i></a>
+</div>
+
+
+<h3>🧪 Follow My Scientific Updates on Twitter</h3>
+
+<a class="twitter-timeline" 
+   data-height="600" 
+   data-theme="light" 
+   href="https://twitter.com/partha679?ref_src=twsrc%5Etfw">
+   Tweets by @partha679
+</a> 
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

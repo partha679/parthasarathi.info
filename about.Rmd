@@ -1,0 +1,10 @@
+---
+title: "Projects"
+site: "index.html"
+output:
+  html_document:
+    theme: cerulean
+    highlight: textmate
+    self_contained: false
+---
+

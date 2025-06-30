@@ -1,0 +1,62 @@
+---
+title: "Welcome!"
+site: "index.html"
+output:
+  html_document:
+    theme: cerulean
+    highlight: textmate
+    self_contained: false
+---
+
+
+
+Hi, I’m 
+
+
+<span style="font-family: 'Segoe UI', sans-serif; font-size: 38px; color: darkslateblue;">
+ <b> PARTHA SARATHI JENA</b>
+</span>
+
+<span style="font-size:18px; color:darkgreen;">
+ <b> Researcher 👩🏼‍🎓, Educator 🧑‍🏫, Digital Storyteller 🎥 </b>
+</span>
+
+<br><br>
+
+
+<img src="solo1.jpg" style="float: right; margin-left: 20px; width: 300px;" />
+
+
+
+<div style="border: 2px solid #007acc; border-radius: 6px; padding: 15px; background-color: #e6f2ff; margin: 20px 0; max-width: 500px;">
+  <h4 style="margin-top: 0; color: #007acc;">📌 About me</h4>
+  <p style="margin-bottom: 0;">
+    I am a postdoctoral researcher at the University of Sao Paulo, Brazil. I specialize in (paleo)climate research, utilizing a range of geochemical proxies—with a particular focus on cosmogenic nuclides. My work spans diverse regions, including the Indian Himalayas, the northern Indian Ocean, and the equatorial Atlantic Ocean. Feel free to reach out if you're interested in discussing my research or exploring potential collaborations. information or tips.
+  </p>
+</div>
+
+
+
+
+
+<br><br><br><br><br><br>
+
+
+
+<p style="text-align:center;">
+  
+  <span style="font-size:18px; color:blue;">
+    Built with a heart full of ❤️ and a pinch of
+    <img src="https://www.r-project.org/logo/Rlogo.png" alt="R Logo" width="40" style="vertical-align:middle; margin-right:10px;">
+  </span>
+</p>
+
+
+<p style="text-align:center;">
+ <span style="font-size:16px; color:black;">
+    Thanks for visiting! Drop me a note — even a small message can mean a lot.
+  </span>
+</p>
+
+
+

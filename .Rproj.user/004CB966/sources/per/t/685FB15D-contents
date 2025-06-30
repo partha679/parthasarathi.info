@@ -1,0 +1,42 @@
+---
+title: "Projects"
+site: "index.html"
+output:
+  html_document:
+    theme: cerulean
+    highlight: textmate
+    self_contained: false
+---
+
+
+
+## 📬 Contact Me
+
+Feel free to reach out via email or connect with me on social media.
+
+**Email:** [partha679@gmail.com](mailto:yourname@example.com)  
+**Phone:** +91-123-456-7890  
+**Location:** Sao Paulo, Brazil
+
+### 🌐 Connect Online
+
+- [LinkedIn](https://linkedin.com/in/yourprofile)
+- [GitHub](https://github.com/yourprofile)
+- [Twitter](https://twitter.com/yourhandle)
+
+<br><br>
+
+<h3 style="text-align:center;">Visitor Comments</h3>
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScz1bXRSb-8F_uJBktpfAITILeQi0gCaeAXNzd04Gs1p5mPgg/viewform?embedded=true" width="640" height="580" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+
+<br><br>
+
+<h3 style="text-align:center;">Visitor Comments</h3>
+
+<iframe src="https://docs.google.com/spreadsheets/d/1W8Lf-LBXHi00FevObEufStdiKFILgadCkiq8Ji9gEOE/edit?usp=sharing/pubhtml?widget=true&amp;headers=false"
+        width="100%" height="600"></iframe>
+
+
+

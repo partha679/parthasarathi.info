@@ -1,0 +1,79 @@
+---
+title: "Projects"
+site: "index.html"
+output:
+  html_document:
+    theme: cerulean
+    highlight: textmate
+    self_contained: false
+---
+
+
+## Watch My Video
+
+<span style="font-family: 'Segoe UI', sans-serif; font-size: 38px; color: darkslateblue;">
+ 1. Mozambique
+</span>
+
+
+<table>
+  <tr>
+    <th>Gorongosa national park</th>
+    <th>Title 2</th>
+  </tr>
+  <tr>
+    <td>
+      <iframe width="425" height="300" src="https://www.youtube.com/embed/taUGhlpv28M?si=6uwUVYGmtlm60YUc" frameborder="0" allowfullscreen></iframe>
+    </td>
+    <td style="padding-left: 40px;">
+      <iframe width="425" height="300" src="https://www.youtube.com/embed/taUGhlpv28M?si=6uwUVYGmtlm60YUc" frameborder="0" allowfullscreen></iframe>
+    </td>
+  </tr>
+</table>
+
+
+
+<br>
+
+<span style="font-family: 'Segoe UI', sans-serif; font-size: 38px; color: darkslateblue;">
+ 2. Peru
+</span>
+
+
+<table>
+  <tr>
+    <th>The oldest pyramids</th>
+    <th>Barranco</th>
+  </tr>
+  <tr>
+    <td>
+      <iframe width="425" height="300" src="https://www.youtube.com/embed/DS9Z_Y57eT8?si=AVIrEJaB10JI7BmH" frameborder="0" allowfullscreen></iframe>
+    </td>
+    <td style="padding-left: 40px;">
+      <iframe width="425" height="300" src="https://www.youtube.com/embed/IzwsoPo3nZc?si=rT0gmZYEJ3TBQN-c" frameborder="0" allowfullscreen></iframe>
+    </td>
+  </tr>
+</table>
+
+
+<br>
+
+<span style="font-family: 'Segoe UI', sans-serif; font-size: 38px; color: darkslateblue;">
+ 3. Qatar
+</span>
+
+
+<table>
+  <tr>
+    <th>Katara Cultural Village</th>
+    <th>Qatari food</th>
+  </tr>
+  <tr>
+    <td>
+      <iframe width="425" height="300" src="https://www.youtube.com/embed/xflLMM0wCJ0?si=GlTtjbIcJ2yUBPRR" frameborder="0" allowfullscreen></iframe>
+    </td>
+    <td style="padding-left: 40px;">
+      <iframe width="425" height="300" src="https://www.youtube.com/embed/KV_ZWtSPBlo?si=lWleXMlGe42ilAJ8" frameborder="0" allowfullscreen></iframe>
+    </td>
+  </tr>
+</table>
