@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Presentations</title>
+
+<script src="site_libs/header-attrs-2.29/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cerulean.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Partha</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li>
+  <a href="about.html">About</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Academic
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="career.html">Career</a>
+    </li>
+    <li>
+      <a href="projects.html">Projects</a>
+    </li>
+    <li>
+      <a href="publications.html">Publications</a>
+    </li>
+    <li>
+      <a href="presentations.html">Presentations</a>
+    </li>
+    <li>
+      <a href="field_trips.html">Field trips</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Non academic
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="photography.html">Photography</a>
+    </li>
+    <li>
+      <a href="youtube.html">Youtube</a>
+    </li>
+    <li>
+      <a href="Social_media.html">Social media</a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="Contact.html">Contact</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Presentations</h1>
+
+</div>
+
+
+<!-- Floating menu in top-right corner -->
+<div style="
+  position: fixed;
+  top: 60px;
+  right: 190px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 12px;
+  z-index: 9999;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+  font-size: 14px;
+  border-radius: 8px;
+  width: 200px;
+">
+<p><b>📌 Menu</b><br> <a href="#Invited Talks /Lecture"> Invited
+talks</a><br> <a href="#Presentations at Conferences"> Conference
+presentation</a><br> <a href="#Workshops"> Workshops</a><br></p>
+</div>
+<p><a name="Invited talks"></a></p>
+<div id="invited-talks-lectures" class="section level2">
+<h2>Invited Talks /Lectures 📖</h2>
+<div
+style="display: flex; justify-content: center; gap: 30px; margin-top: 20px;">
+<!-- Image 1 -->
+<div style="text-align: center;">
+<h4>
+🌊 Ravenshaw University, Jan 2025
+</h4>
+<img src="Images/RAV.jpg" alt="Amazon Plume" width="420" height="300">
+</div>
+<!-- Image 2 -->
+<div style="text-align: center;">
+<h4>
+FM Autonomous college
+</h4>
+<img src="Images/FMC.jpg" alt="Satellite View" width="420" height="300">
+</div>
+</div>
+<p><br></p>
+<ul>
+<li>Invited talk on “Deglacial evolution in ventilation of the western
+equatorial Atlantic Ocean and its link to atmospheric CO2 changes” at
+the Indian Institute of Technology Bhubaneswar on 4th March 2024.</li>
+<li>Invited keynote presentation on “Coupling between deep ocean
+circulation and terrestrial climate change: lessons from the past” at
+the Fakir Mohan University, Balasore on 9th January 2025.</li>
+<li>Invited extramural lecture on “Decoding Earth’s Climate History:
+Techniques and Insights” at Fakir Mohan Autonomous College, Balasore on
+13th January 2025.</li>
+<li>Invited extramural lecture on “Unravelling past climate change
+through Himalayan Landforms” at Ravenshaw University, Cuttack on 16th
+April 2025.</li>
+<li>Invited extramural lecture on “Glaciers and climate change” at
+Adikabi Saraladas Degree College, Tirtol on 17th April 2025.</li>
+</ul>
+<p><br></p>
+<p><a name="Conference presentation"></a></p>
+</div>
+<div id="presentations-at-conferences" class="section level2">
+<h2>Presentations at Conferences 🧑‍💼</h2>
+<div
+style="display: flex; justify-content: center; gap: 30px; margin-top: 20px;">
+<!-- Image 1 -->
+<div style="text-align: center;">
+<h4>
+🌊 FM University, Jan 2025
+</h4>
+<img src="Images/FMU.jpg" alt="Amazon Plume" width="420" height="300">
+</div>
+<!-- Image 2 -->
+<div style="text-align: center;">
+<h4>
+🛰️NIO, Nov 2024
+</h4>
+<img src="Images/NIO.jpg" alt="Satellite View" width="420" height="300">
+</div>
+</div>
+<p><br></p>
+<ul>
+<li>Topic: Deglacial evolution in ventilation of the western equatorial
+Atlantic Ocean and its link to atmospheric CO2 changes.
+<ul>
+<li>TROPQUA-2024</li>
+<li>Mode: Presentation (Offline/ In-person) on 3rd Nov 2024</li>
+</ul></li>
+<li>Topic: The Atlantic meridional overturning circulation during
+Heinrich Stadial 1
+<ul>
+<li>AGU fall meeting-2023</li>
+<li>Mode: Presentation (Offline/In-person) on 14 Dec 2023</li>
+</ul></li>
+<li>Topic: Past geomagnetic field intensity reconstructed using
+authigenic 10Be/9Be
+<ul>
+<li>Frontiers in Geoscience Research Conference (FGRC-23), PRL,
+Ahmedabad</li>
+<li>Mode: Presentation (Offline/In-person) on 03 Feb 2023</li>
+</ul></li>
+<li>Topic: 10Be/9Be Ratio Variation in the Central Indian Ocean during
+the Last 43 ka; Implication to Past Geomagnetic Field Intensity Changes
+<ul>
+<li>AGU fall meeting-21</li>
+<li>Mode: Presentation (Online) on 17 Dec 2021</li>
+</ul></li>
+<li>Topic: Spatial variability and residence time of beryllium isotopes
+in the Indian Ocean: Role of oceanic processes
+<ul>
+<li>Frontiers in Geoscience Research Conference (FGRC-21), PRL,
+Ahmedabad</li>
+<li>Mode: Presentation (Online) on 28 Sept 2021</li>
+</ul></li>
+<li>Topic: Role of In-situ and Meteoric 10Be in Quaternary Glaciation,
+Marine Chronology, and Paleomagnetic Reconstruction
+<ul>
+<li>7th national conference of Ocean Society of India (OSICON-21),
+NCPOR, Goa</li>
+<li>Mode: Presentation (Online) on 14 Aug 2021</li>
+</ul></li>
+<li>Topic: “Quaternary Glaciation Studies using terrestrial cosmogenic
+radionuclides”
+<ul>
+<li>Second National Conference and Field Workshop on “Recent Studies on
+Geology of Kachchh Basin”, KSKV Kachchh University, Gujarat</li>
+<li>Mode: Poster (Offline/In-person) on 30 Dec 2018</li>
+</ul></li>
+</ul>
+<p><a name="Workshops"></a></p>
+</div>
+<div id="workshops" class="section level2">
+<h2>Workshops 🧑‍🏫</h2>
+<ul>
+<li>Workshop on Paleoclimate data assimilation (Online; 21-23 Aug 2023)
+organised by Northern Arizona University.</li>
+<li>Webinar &amp; Workshop on Proxy System Modeling for Lacustrine
+Archives (Online; 13 Apr 2023)</li>
+<li>Workshop on Isotopes in Earth, Ocean &amp; Atmospheric Sciences
+organised by the National Institute of Oceanography, Goa</li>
+<li>Isocamp2021 organised by the Centre for Stable Isotopes, University
+of New Mexico (Online)</li>
+</ul>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

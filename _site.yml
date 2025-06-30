@@ -1,5 +1,6 @@
 ---
 name: "Partha"
+output_dir: "docs"
 navbar:
   title: "Partha"
   left:
