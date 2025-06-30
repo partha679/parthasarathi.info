@@ -73,7 +73,7 @@ output:
  <!-- Image 1 -->
  <div style="text-align: center;">
   <h4>🌊 FM University, Jan 2025</h4>
-  <img src="Images/FMU.jpg" alt="Amazon Plume" width="420" height="300">
+  <img src="Images/FMU.JPG" alt="Amazon Plume" width="420" height="300">
  </div>
 
  <!-- Image 2 -->
