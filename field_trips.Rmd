@@ -18,7 +18,7 @@ In 2025, I had the extraordinary opportunity to conduct fieldwork in Gorongosa N
  <!-- Image 1 -->
  <div style="text-align: center;">
   <h4>Chitengo, Apr 2025</h4>
-  <img src="Images/Field/MOZ1.jpg" alt="Amazon Plume" width="430" height="280">
+  <img src="Images/Field/MOZ1.JPG" alt="Amazon Plume" width="430" height="280">
  </div>
 
  <!-- Image 2 -->
@@ -40,13 +40,13 @@ Between 2018 and 2021, I participated in three field campaigns across Ladakh, ea
  <!-- Image 1 -->
  <div style="text-align: center;">
   <h4>Nubra, Oct 2018</h4>
-  <img src="Images/Field/Ladakh1.jpg" alt="Amazon Plume" width="430" height="280">
+  <img src="Images/Field/Ladakh1.JPG" alt="Amazon Plume" width="430" height="280">
  </div>
 
  <!-- Image 2 -->
 <div style="text-align: center;">
   <h4>Panamik, Sept 2019 </h4>
-  <img src="Images/Field/Ladakh2.jpg" alt="Satellite View" width="430" height="280">
+  <img src="Images/Field/Ladakh2.JPG" alt="Satellite View" width="430" height="280">
  </div>
 
 </div>
