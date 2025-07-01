@@ -1,5 +1,5 @@
 ---
-title: "Career"
+title: "Contact"
 site: "index.html"
 output:
   html_document:
@@ -9,21 +9,82 @@ output:
 ---
 
 
-## 📬 Contact Me
+<br>
 
-Feel free to reach out via email or connect with me on social media.
+<div style="text-align: center;">
 
-**Email:** [partha679@gmail.com](mailto:yourname@example.com)  
-**Phone:** +91-123-456-7890  
-**Location:** Sao Paulo, Brazil
+  <div style="display: inline-flex; gap: 20px; align-items: center; justify-content: center;">
+   <a href="https://www.researchgate.net/profile/YOUR_ID" target="_blank">
+   <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/ResearchGate_icon_SVG.svg" alt="ResearchGate" width="40">
+    </a>
 
-### 🌐 Connect Online
+   <a href="https://scholar.google.com/citations?user=YOUR_ID" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg" alt="Google Scholar" width="40">
+    </a>
+    
+   <a href="https://orcid.org/YOUR_ID" target="_blank">
+     <img src="https://upload.wikimedia.org/wikipedia/commons/0/06/ORCID_iD.svg" alt="ORCID" width="40">
+   </a>
+    
+  <a href="https://www.scopus.com/authid/detail.uri?authorId=YOUR_ID" target="_blank">
+      <img src="scopus.png" alt="Scopus" width="40">
+   </a>
 
-- [LinkedIn](https://linkedin.com/in/partha679)
-- [Twitter](https://twitter.com/partha679)
+  </div>
+
+</div>
+
+
+<div style="text-align: center; margin-top: 20px;">
+
+  <div style="display: inline-flex; gap: 20px; align-items: center; justify-content: center;">
+
+   <a href="https://twitter.com/partha679" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Logo_of_Twitter.svg" alt="Twitter" width="40">
+   </a>
+
+   <a href="https://www.linkedin.com/in/partha-sarathi-jena-9b26a264/" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" width="40">
+   </a>
+
+  <a href="https://www.facebook.com/partha679" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Facebook_icon.svg" alt="Facebook" width="40">
+  </a>
+
+  <a href="https://www.instagram.com/partha679" target="_blank">
+     <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram" width="40">
+  </a>
+
+  </div>
+
+</div>
+
+
+
+<div class="contact-container">
+
+<h2>Get in Touch 💬</h2>
+<p>If you have any questions, collaborations, or opportunities, feel free to leave a message below. I'll get back to you as soon as possible!</p>
+
+<form action="https://formspree.io/f/xwpbyzoj" method="POST" class="contact-form">
+  <label for="name">👤 Your Name</label>
+  <input type="text" name="name" placeholder="John Doe" required>
+
+  <label for="email">📧 Your Email</label>
+  <input type="email" name="_replyto" placeholder="you@example.com" required>
+
+  <label for="message">📝 Your Message</label>
+  <textarea name="message" rows="6" placeholder="Type your message here..." required></textarea>
+
+  <button type="submit">🚀 Send Message</button>
+</form>
+
+</div>
+
 
 <br><br>
 
+## 🙋Feedback
 
 <style>
   .container-wrapper {

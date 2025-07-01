@@ -9,26 +9,34 @@ output:
 ---
 
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+## Primary project
 
-## R Markdown
+<div style="text-align: center; margin-top: 20px;">
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+<span style="font-size:18px; color:darkgreen;">
+ <b> Abrupt changes in the deep circulation of the western tropical Atlantic Ocean during the last two glacial periods </b>
+</span>
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+<span style="font-size:18px; color:blue;">
+ <b> Supervisor- </b> Prof. Cristiano M Chiessi, Univeristy of Sao Paulo, Brazil
+</span>
 
-```{r cars}
-summary(cars)
-```
+<span style="font-size:18px; color:blue;">
+ <b> Funded by- </b> Sao Paulo Research Foundation (FAPESP)
+</span>
 
-## Including Plots
+</div>
 
-You can also embed plots, for example:
+Understanding how the Atlantic Meridional Overturning Circulation (AMOC) varies on centennial timescales is crucial, as such fluctuations can impact global climate by altering heat transport between hemispheres and influencing how carbon is exchanged between the ocean and atmosphere. However, our knowledge remains limited due to the short span of instrumental data and the lack of high-resolution paleo-records capable of resolving changes at this scale. This project addresses that gap by combining radiocarbon-based ventilation age reconstructions from a uniquely high-resolution sediment core in the western equatorial Atlantic with state-of-the-art numerical modeling. By focusing on the last deglaciation period—particularly Heinrich Stadial 1—this research aims to provide new insights into centennial-scale AMOC variability and its potential role in modulating regional and global climate systems, including hydroclimate shifts and ocean-atmosphere CO₂ exchange.
 
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+<div style="text-align: center; margin-top: 20px;">
+  <img src="Images/Science/ocean_co2.jpg" alt="Descriptive Text" width="400">
+</div>
+
+
+<br><br>
+
+## Collaboration
+- Paleo-Primate Project Gorongosa at Gorongosa National Park, Mozambique
