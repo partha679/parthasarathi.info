@@ -1,0 +1,65 @@
+---
+title: "Photo Map"
+output: 
+  html_document:
+    self_contained: true
+    theme: flatly
+---
+
+```{r setup, include=FALSE}
+library(leaflet)
+library(htmltools)
+library(readr)
+
+```{r show-places-data, echo=TRUE}
+
+```{r copy-images, include=FALSE}
+dir.create("docs/Image/places", recursive = TRUE, showWarnings = FALSE)
+img_files <- list.files("Image/places", full.names = TRUE, pattern = "\\.(jpg|png)$", ignore.case = TRUE)
+file.copy(img_files, "docs/Image/places", overwrite = TRUE)
+
+
+# Read the CSV file
+places <- read_csv("places.csv", locale = locale(encoding = "UTF-8"))
+
+# Show the entire data frame to check if lat/lng are OK
+print(places)
+
+
+```{r map, echo=FALSE}
+leaflet(data = places) %>%
+  addTiles() %>%
+  addMarkers(
+    lng = ~lng,
+    lat = ~lat,
+    popup = ~paste0("<b>", filename, "</b><br>", desc)
+  )
+
+
+```{r map-with-images, echo=FALSE}
+# Build popup with <img> and description
+make_popup <- function(filename, desc) {
+  img_path <- file.path("Image", "places", filename)
+  popup_html <- htmltools::tagList(
+    tags$img(src = img_path, style = "max-width: 250px; border-radius: 8px;"),
+    tags$p(desc)
+  )
+  as.character(popup_html)
+}
+
+# Apply to each row
+places$popup <- mapply(make_popup, places$filename, places$desc)
+
+# Create leaflet map with popup
+leaflet(data = places) %>%
+  addTiles() %>%
+  addMarkers(
+    lng = ~lng,
+    lat = ~lat,
+    popup = ~popup,
+    clusterOptions = markerClusterOptions()
+  )
+
+
+print(file.path("Image", "places", places$filename))
+
