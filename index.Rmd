@@ -8,7 +8,21 @@ output:
     self_contained: false
 ---
 
-<img src="solo1.jpg" style="float: right; margin-left: 20px; width: 300px;" />
+<style>
+.img-hover {
+  transition: all 0.3s ease;
+  filter: brightness(100%);
+  box-shadow: none;
+}
+
+.img-hover:hover {
+  filter: brightness(85%);
+  box-shadow: 0 0 15px #666;
+}
+</style>
+
+<img src="solo1.jpg" class="img-hover" style="float: right; margin-left: 20px; width: 300px;" />
+
 
 <br>
 

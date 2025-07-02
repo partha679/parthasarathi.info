@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "📷 My Photography Portfolio"
 site: "index.html"
 output:
   html_document:
@@ -10,7 +10,6 @@ output:
 
 <br><br>
 
-## 📷 My Photography Portfolio
 
 <!-- Lightbox2 CSS and JS -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
@@ -46,7 +45,7 @@ output:
    <a href="images/photography/4.JPG" data-lightbox="gallery" data-title="Himalayan Ridge">
       <img src="images/photography/4.JPG" alt="Himalayan Ridge" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
    </a>
-    <p style="margin-top: 8px; font-weight: bold;"Panamik</p>
+    <p style="margin-top: 8px; font-weight: bold;">Panamik</p>
   </div>
 
   <!-- Row 1 -->
