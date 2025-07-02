@@ -1,65 +1,55 @@
 ---
-title: "Photo Map"
+title: "Visited Places with Images"
 output: 
   html_document:
-    self_contained: true
+    self_contained: false
     theme: flatly
+    toc: true
+    toc_float: true
+output_dir: "docs"
 ---
 
 ```{r setup, include=FALSE}
-library(leaflet)
-library(htmltools)
+# Load required libraries
+library(mapview)
+library(sf)
 library(readr)
-
-```{r show-places-data, echo=TRUE}
-
-```{r copy-images, include=FALSE}
-dir.create("docs/Image/places", recursive = TRUE, showWarnings = FALSE)
-img_files <- list.files("Image/places", full.names = TRUE, pattern = "\\.(jpg|png)$", ignore.case = TRUE)
-file.copy(img_files, "docs/Image/places", overwrite = TRUE)
+library(dplyr)
+library(htmltools)
+library(webshot2)
 
 
-# Read the CSV file
+
+# Step 1: Read CSV
 places <- read_csv("places.csv", locale = locale(encoding = "UTF-8"))
 
-# Show the entire data frame to check if lat/lng are OK
-print(places)
+# Step 2: Create popup HTML
+places$popup <- paste0(
+  "<img src='Images/places/", places$filename, 
+  "' width='220px' style='border-radius:10px;margin-bottom:5px;'><br><b>",
+  places$desc, "</b>"
+)
+
+# Step 3: Convert to spatial object (sf)
+places_sf <- st_as_sf(places, coords = c("lng", "lat"), crs = 4326)
 
 
-```{r map, echo=FALSE}
-leaflet(data = places) %>%
-  addTiles() %>%
-  addMarkers(
-    lng = ~lng,
-    lat = ~lat,
-    popup = ~paste0("<b>", filename, "</b><br>", desc)
-  )
+
+# Step 4: Copy images to docs folder
+dir.create("docs/Images/places", recursive = TRUE, showWarnings = FALSE)
+img_files <- list.files("Images/places", full.names = TRUE, pattern = "\\.(jpg|jpeg|png)$", ignore.case = TRUE)
+file.copy(img_files, "docs/Images/places", overwrite = TRUE)
 
 
-```{r map-with-images, echo=FALSE}
-# Build popup with <img> and description
-make_popup <- function(filename, desc) {
-  img_path <- file.path("Image", "places", filename)
-  popup_html <- htmltools::tagList(
-    tags$img(src = img_path, style = "max-width: 250px; border-radius: 8px;"),
-    tags$p(desc)
-  )
-  as.character(popup_html)
-}
+# Step 5: Create the map with mapview
+map <- mapview(
+  places_sf,
+  popup = places$popup,
+  layer.name = "Visited Places",
+  homebutton = TRUE
+)
 
-# Apply to each row
-places$popup <- mapply(make_popup, places$filename, places$desc)
-
-# Create leaflet map with popup
-leaflet(data = places) %>%
-  addTiles() %>%
-  addMarkers(
-    lng = ~lng,
-    lat = ~lat,
-    popup = ~popup,
-    clusterOptions = markerClusterOptions()
-  )
+map
 
 
-print(file.path("Image", "places", places$filename))
 
