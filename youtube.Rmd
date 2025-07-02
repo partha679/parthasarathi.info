@@ -1,5 +1,5 @@
 ---
-title: "Projects"
+title: " "
 site: "index.html"
 output:
   html_document:
@@ -7,7 +7,7 @@ output:
     highlight: textmate
     self_contained: false
 ---
-
+ <br><br><br>
 
 ## Watch My Video
 

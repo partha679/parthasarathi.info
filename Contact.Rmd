@@ -14,19 +14,19 @@ output:
 <div style="text-align: center;">
 
   <div style="display: inline-flex; gap: 20px; align-items: center; justify-content: center;">
-   <a href="https://www.researchgate.net/profile/YOUR_ID" target="_blank">
+   <a href="https://www.researchgate.net/profile/Partha-Jena?ev=hdr_xprf" target="_blank">
    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/ResearchGate_icon_SVG.svg" alt="ResearchGate" width="40">
     </a>
 
-   <a href="https://scholar.google.com/citations?user=YOUR_ID" target="_blank">
+   <a href="https://scholar.google.co.in/citations?user=mi1fxyEAAAAJ&hl=en" target="_blank">
     <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg" alt="Google Scholar" width="40">
     </a>
     
-   <a href="https://orcid.org/YOUR_ID" target="_blank">
+   <a href="https://orcid.org/0000-0002-2232-4212" target="_blank">
      <img src="https://upload.wikimedia.org/wikipedia/commons/0/06/ORCID_iD.svg" alt="ORCID" width="40">
    </a>
     
-  <a href="https://www.scopus.com/authid/detail.uri?authorId=YOUR_ID" target="_blank">
+  <a href="https://www.scopus.com/authid/detail.uri?authorId=57206849353" target="_blank">
       <img src="scopus.png" alt="Scopus" width="40">
    </a>
 

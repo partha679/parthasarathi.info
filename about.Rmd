@@ -1,5 +1,5 @@
 ---
-title: "Projects"
+title: "The Story"
 site: "index.html"
 output:
   html_document:
@@ -7,4 +7,103 @@ output:
     highlight: textmate
     self_contained: false
 ---
+<br><br>
+
+<!-- Floating menu in top-right corner -->
+<div style="
+  position: fixed;
+  top: 60px;
+  right: 100px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 12px;
+  z-index: 9999;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+  font-size: 14px;
+  border-radius: 8px;
+  width: 200px;
+">
+
+<b>📌 Menu</b><br>
+<a href="#Part 1"> Part 1</a><br>
+<a href="#Part 2"> Part 2</a><br>
+</div>
+
+
+<a name="Part 1"></a>
+
+## Part 1
+
+<div style="border: 2px solid #007acc; font-family: 'Arial';border-radius: 6px; padding: 15px; background-color: #e6f2ff; margin: 20px 0; max-width: 1000px;text-align: justify;text-indent: 40px;">
+
+
+🌧️ It was a monsoon night in the mid-1990s. Rain poured relentlessly over a small village nestled in the Keonjhar district of Odisha. The nearest hospital lay 10 kilometers away, and no vehicle was available to transport the expectant mother through the storm. Just when hope seemed dim, the rain miraculously eased, and the family managed to reach the hospital in time.
+
+👶 A baby boy was born that night. To the family, it felt like divine intervention—a blessing from the heavens. They named him Partha Sarathi: Partha, meaning Arjuna, and Sarathi, the charioteer—Lord Krishna himself, who guided Arjuna through the trials of the Mahabharata.
+
+🕉️ The name carried a prophecy. His parents believed he would embody Arjuna’s valor and Krishna’s wisdom. Like the epic itself, his life would be filled with challenges, but he would face them with courage, clarity, and grace, emerging victorious, time and again.
+
+🧠 From an early age, the boy displayed the wisdom his family had hoped for. Obedient, diligent, and quietly determined, he used to travel 3 kilometers each day in a trolley rickshaw to attend school. Life tested him and his family when he approached the end of Class 5.
+</div>
+
+<div style="display: flex; justify-content: center; gap: 30px; margin-top: 20px;">
+
+ <!-- Image 1 -->
+ <div style="text-align: center;">
+  <img src="images/mine/house1.JPG" alt="Amazon Plume" width="420" height="300">
+    <h4>The house</h4>
+ </div>
+
+</div>
+
+
+<a name="Part 2"></a>
+
+## Part 2
+
+<div style="border: 2px solid #007acc; font-family: 'Arial';border-radius: 6px; padding: 15px; background-color: #e6f2ff; margin: 20px 0; max-width: 1000px;text-align: justify;text-indent: 40px;">
+
+
+👨‍👦 His father, driven by a dream to provide the best education possible, faced a difficult truth: their village lacked quality institutions. With no permanent job and a modest income, he made a bold decision—his son would have to leave home to pursue better opportunities. He encouraged the boy to appear for entrance exams at two residential schools: Navodaya Vidyalaya, 20 km away, and Rtapalli Vidyapitha, a reputed school in Bhubaneswar, 200 km from home.
+
+📚 The boy sat for both exams. At Rtapalli, he was shortlisted among the top 45 candidates in the first round. The final selection required the students to stay overnight at the school, where they were evaluated not just on talent, but on character. He was chosen—one of only 15 selected from the batch. Unsurprisingly, he also cleared the Navodaya Vidyalaya exam.
+When his father asked, “Where would you like to study?”
+The 10-year-old replied with quiet conviction: “Rtapalli Vidyapitha.”
+
+💔 Sending their only son 200 kilometers away was a heart-wrenching decision. His parents wept. His mother couldn’t eat for days. But the boy, though aching inside, put on a brave face. “Don’t worry about me, I am okay”.
+
+🧺 He didn’t know how to wash his clothes or use the hostel toilets. But he wasn’t the only one—many of the boys were just as confused and scared. Slowly, they learned together, helping each other through the small struggles of daily life.
+
+🎶 Every evening, bhajans from a nearby Hanuman temple filled the air—“Jai Hanuman Gyan Gun Sagar…”—blending with the school’s prayer time. During those prayers, the boy missed his family deeply. He would cry quietly, hiding his tears so no one could see. It became a part of his daily routine—missing home, but staying strong.
+
+🏠 Before every vacation, he would tell himself, “This time, I’ll say I don’t want to go back. I’ll stay home.”
+But once home, he never uttered a word of complaint.
+
+📚 The five years he spent at Rtapalli Vidyapitha helped him grow in amazing ways. He learned his first programming language in Class 7. By the time he reached Class 10, he could already write programs in BASIC, C, and DOS. He studied integration in Class 9 and explored advanced topics in physics, chemistry, and biology.
+
+👨‍👦 By then, his father had a permanent job at the panchayat office, but still had to spend very little on his son’s education. The school charged only ₹900 a year (about $12), which covered uniforms, notebooks, and medicines. Education, hostel, and food were all free—thanks to a kind Odia scientist living in the U.S. who built the school.
+
+🌍 That act of generosity left a deep mark on the boy. From then on, he didn’t just dream of becoming a scientist—he dreamed of becoming someone who could bring real change to the world.
+
+</div>
+
+
+<div style="display: flex; justify-content: center; gap: 30px; margin-top: 20px;">
+
+ <!-- Image 1 -->
+ <div style="text-align: center;">
+  <img src="images/mine/rta1.JPG" alt="Amazon Plume" width="420" height="300">
+    <h4>The boy with his schoolmates</h4>
+ </div>
+ 
+  <!-- Image 1 -->
+ <div style="text-align: center;">
+  <img src="images/mine/child1.JPG" alt="Amazon Plume" width="420" height="300">
+    <h4>The boy</h4>
+ </div>
+
+</div>
+
+**Will continue...**
+
 

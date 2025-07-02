@@ -24,14 +24,14 @@ output:
    <a href="images/photography/1.JPG" data-lightbox="gallery" data-title="Gorongosa Sunset">
       <img src="images/photography/1.JPG" alt="Gorongosa Sunset" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
    </a>
-    <p style="margin-top: 8px; font-weight: bold;">Gorongosa Sunset</p>
+    <p style="margin-top: 8px; font-weight: bold;">Leh</p>
   </div>
 
   <div style="flex: 0 1 calc(50% - 20px); text-align: center;">
    <a href="images/photography/2.JPG" data-lightbox="gallery" data-title="Himalayan Ridge">
       <img src="images/photography/2.JPG" alt="Himalayan Ridge" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
    </a>
-    <p style="margin-top: 8px; font-weight: bold;">Himalayan Ridge</p>
+    <p style="margin-top: 8px; font-weight: bold;">Panamik</p>
   </div>
 
  <!-- Row 1 -->
@@ -39,29 +39,29 @@ output:
    <a href="images/photography/3.JPG" data-lightbox="gallery" data-title="Gorongosa Sunset">
       <img src="images/photography/3.JPG" alt="Gorongosa Sunset" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
    </a>
-    <p style="margin-top: 8px; font-weight: bold;">Gorongosa Sunset</p>
+    <p style="margin-top: 8px; font-weight: bold;">Panamik</p>
   </div>
 
   <div style="flex: 0 1 calc(50% - 20px); text-align: center;">
    <a href="images/photography/4.JPG" data-lightbox="gallery" data-title="Himalayan Ridge">
       <img src="images/photography/4.JPG" alt="Himalayan Ridge" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
    </a>
-    <p style="margin-top: 8px; font-weight: bold;">Himalayan Ridge</p>
+    <p style="margin-top: 8px; font-weight: bold;"Panamik</p>
   </div>
 
   <!-- Row 1 -->
   <div style="flex: 0 1 calc(50% - 20px); text-align: center;">
    <a href="images/photography/5.JPG" data-lightbox="gallery" data-title="Gorongosa Sunset">
-      <img src="images/photography/1.JPG" alt="Gorongosa Sunset" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+      <img src="images/photography/5.JPG" alt="Gorongosa Sunset" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
    </a>
-    <p style="margin-top: 8px; font-weight: bold;">Gorongosa Sunset</p>
+    <p style="margin-top: 8px; font-weight: bold;">Panamik</p>
   </div>
 
   <div style="flex: 0 1 calc(50% - 20px); text-align: center;">
    <a href="images/photography/2.JPG" data-lightbox="gallery" data-title="Himalayan Ridge">
       <img src="images/photography/6.JPG" alt="Himalayan Ridge" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
    </a>
-    <p style="margin-top: 8px; font-weight: bold;">Himalayan Ridge</p>
+    <p style="margin-top: 8px; font-weight: bold;">Pangong</p>
   </div>
 
 </div>
