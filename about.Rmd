@@ -50,7 +50,7 @@ output:
 
  <!-- Image 1 -->
  <div style="text-align: center;">
-  <img src="images/mine/house1.JPG" alt="Amazon Plume" width="420" height="300">
+  <img src="images/mine/house1.jpg" alt="Amazon Plume" width="420" height="300">
     <h4>The house</h4>
  </div>
 
@@ -92,13 +92,13 @@ But once home, he never uttered a word of complaint.
 
  <!-- Image 1 -->
  <div style="text-align: center;">
-  <img src="images/mine/rta1.JPG" alt="Amazon Plume" width="420" height="300">
+  <img src="images/mine/rta1.jpg" alt="Amazon Plume" width="420" height="300">
     <h4>The boy with his schoolmates</h4>
  </div>
  
   <!-- Image 1 -->
  <div style="text-align: center;">
-  <img src="images/mine/child1.JPG" alt="Amazon Plume" width="420" height="300">
+  <img src="images/mine/child1.jpg" alt="Amazon Plume" width="420" height="300">
     <h4>The boy</h4>
  </div>
 
