@@ -30,8 +30,6 @@ navbar:
           href: youtube.html
         - text: "Social media"
           href: Social_media.html
-        - text: "Places visited"
-          href: visited.html
     - text: "Contact"
       href: Contact.html
 
