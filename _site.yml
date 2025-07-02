@@ -1,6 +1,8 @@
 ---
 name: "Partha"
 output_dir: "docs"
+site:
+  cname: parthasarathi.info
 navbar:
   title: "Partha"
   left:
