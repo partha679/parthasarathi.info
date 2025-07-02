@@ -45,6 +45,9 @@ Total Citations: 131; h-index: 7; i10-index: 4
 
 <br><br>
 
+<div style="text-align: justify;">
+
+
 ## Publication list
 
 1.	Dias, B.B., Chiessi, C.M., Piotrowski, A.M., Campos, M.C., **Jena, P.S.**, Ballalai, J.M., Nascimento, R.A., Santos, T.P., Venancio, I.M., Mashayek, A., Albuquerque, A.L.S., 2025. Reduced penetration of northern-sourced waters into the South Atlantic during the Last Interglacial relative to the Holocene. Paleoceanography and Paleoclimatology. https://doi.org/10.1029/2024PA004955.
@@ -77,7 +80,7 @@ Conference Publications (international)
 5.	Jena, S.K., Bhushan, R., Bharti, N., **Jena, P.S.**, 2022. Paleo Thermocline Ventilation and Upper Ocean Water Mass Evolution of the Equatorial Indian Ocean during the Last 44ka. AGU Fall meeting (PP15B-03)
 
 
-
+</div>
 
 
 

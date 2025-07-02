@@ -8,30 +8,38 @@ output:
     self_contained: false
 ---
 
+<img src="solo1.jpg" style="float: right; margin-left: 20px; width: 300px;" />
 
+<br>
 
 Hi, I’m 
+<br>
 
 
 <span style="font-family: 'Segoe UI', sans-serif; font-size: 38px; color: darkslateblue;">
  <b> PARTHA SARATHI JENA</b>
 </span>
+<br>
 
 <span style="font-size:18px; color:darkgreen;">
  <b> Researcher 👩🏼‍🎓, Educator 🧑‍🏫, Digital Storyteller 🎥 </b>
 </span>
 
-<br><br>
-
-
-<img src="solo1.jpg" style="float: right; margin-left: 20px; width: 300px;" />
+<br><br><br><br><br><br>
 
 
 
-<div style="border: 2px solid #007acc; border-radius: 6px; padding: 15px; background-color: #e6f2ff; margin: 20px 0; max-width: 500px;">
-  <h4 style="margin-top: 0; color: #007acc;">📌 About me</h4>
+<h4 style="margin-top: 0; color: #007acc;">📌 About me</h4>
+
+
+<div style="border: 2px solid #007acc; border-radius: 6px; padding: 15px; background-color: #e6f2ff; margin: 20px 0; max-width: 1000px;text-align: justify;text-indent: 40px;">
   <p style="margin-bottom: 0;">
-    I am a postdoctoral researcher at the University of Sao Paulo, Brazil. I specialize in (paleo)climate research, utilizing a range of geochemical proxies—with a particular focus on cosmogenic nuclides. My work spans diverse regions, including the Indian Himalayas, the northern Indian Ocean, and the equatorial Atlantic Ocean. Feel free to reach out if you're interested in discussing my research or exploring potential collaborations. information or tips.
+    I am a researcher, specializing in (paleo)climate studies, with a focus on geochemical proxies—particularly cosmogenic nuclides—to unravel Earth’s environmental history. My work spans a range of dynamic landscapes and marine systems, including the Indian Himalayas, the northern Indian Ocean, and the equatorial Atlantic Ocean.
+    
+    Beyond the lab and field, I’m passionate about teaching, programming, and exploring new places. I enjoy translating complex scientific ideas into engaging learning experiences, whether in the classroom or through articles/ videos. When I’m not analyzing isotopes or writing papers, you’ll likely find me on the road—camera in hand—capturing stories from my travels and turning them into cinematic travel videos.
+    
+    📬 Feel free to reach out if you’d like to discuss research ideas, share insights, or explore potential collaborations.
+
   </p>
 </div>
 
@@ -39,7 +47,7 @@ Hi, I’m
 
 
 
-<br><br><br><br><br><br>
+<br><br><br>
 
 
 
