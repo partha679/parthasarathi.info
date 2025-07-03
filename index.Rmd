@@ -256,7 +256,7 @@ output:
 
 
 
-<a href="contact.html" class="contact-float">💬 Contact Me</a>
+<a href="Contact.html" class="contact-float">💬 Contact Me</a>
 
 
 ---
