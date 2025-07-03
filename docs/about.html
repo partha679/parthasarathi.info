@@ -11,7 +11,7 @@
 
 
 
-<title>The Story</title>
+<title>about.knit</title>
 
 <script src="site_libs/header-attrs-2.29/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -245,9 +245,6 @@ $(document).ready(function () {
         <li>
   <a href="index.html">Home</a>
 </li>
-<li>
-  <a href="about.html">About</a>
-</li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Academic
@@ -291,6 +288,9 @@ $(document).ready(function () {
   </ul>
 </li>
 <li>
+  <a href="about.html">About</a>
+</li>
+<li>
   <a href="Contact.html">Contact</a>
 </li>
       </ul>
@@ -305,34 +305,109 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">The Story</h1>
 
 </div>
 
 
-<p><br><br></p>
-<!-- Floating menu in top-right corner -->
-<div style="
+<style>
+/* Fancy animated gradient background */
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(-45deg, #ffffff, #e0f7ff, #ffffff, #d9f0ff);
+  background-size: 400% 400%;
+  animation: gradientShift 18s ease infinite;
+}
+@keyframes gradientShift {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+/* Fancy floating menu */
+.fancy-menu {
   position: fixed;
   top: 60px;
   right: 100px;
-  background-color: #f9f9f9;
-  border: 1px solid #ccc;
-  padding: 12px;
+  background: rgba(255,255,255,0.7);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(0,0,0,0.1);
+  padding: 12px 16px;
   z-index: 9999;
-  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
   font-size: 14px;
-  border-radius: 8px;
-  width: 200px;
-">
-<p><b>📌 Menu</b><br> <a href="#Part 1"> Part 1</a><br>
-<a href="#Part 2"> Part 2</a><br></p>
+  border-radius: 12px;
+  width: 220px;
+  transition: all 0.3s ease-in-out;
+}
+.fancy-menu:hover {
+  transform: scale(1.03);
+}
+.fancy-menu a {
+  color: #007BFF;
+  text-decoration: none;
+  display: block;
+  margin: 6px 0;
+}
+.fancy-menu a:hover {
+  text-decoration: underline;
+}
+
+/* Glassy story box */
+.story-box {
+  border: 1.5px solid rgba(0, 122, 204, 0.4);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  padding: 20px 25px;
+  margin: 30px auto;
+  max-width: 1000px;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: justify;
+  text-indent: 40px;
+  font-size: 17px;
+  line-height: 1.8;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+.story-box:hover {
+  transform: translateY(-4px);
+}
+
+/* Image layout */
+.image-row {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+.image-item {
+  text-align: center;
+}
+.image-item img {
+  width: 420px;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+.image-item img:hover {
+  transform: scale(1.04);
+}
+</style>
+<p><br><br><br></p>
+<div id="the-story" class="section level2">
+<h2>📖 The Story</h2>
+<div class="fancy-menu">
+<p><b>📌 Jump to a section</b><br> <a href="#Part1">Part 1 – A Stormy
+Birth</a> <a href="#Part2">Part 2 – Leaving Home</a></p>
 </div>
-<p><a name="Part 1"></a></p>
-<div id="part-1" class="section level2">
-<h2>Part 1</h2>
-<div
-style="border: 2px solid #007acc; font-family: &#39;Arial&#39;;border-radius: 6px; padding: 15px; background-color: #e6f2ff; margin: 20px 0; max-width: 1000px;text-align: justify;text-indent: 40px;">
+<p><a name="Part1"></a></p>
+</div>
+<div id="part-1-a-stormy-birth" class="section level2">
+<h2>Part 1 – A Stormy Birth</h2>
+<div class="story-box">
 <p>🌧️ It was a monsoon night in the mid-1990s. Rain poured relentlessly
 over a small village nestled in the Keonjhar district of Odisha. The
 nearest hospital lay 10 kilometers away, and no vehicle was available to
@@ -352,22 +427,19 @@ hoped for. Obedient, diligent, and quietly determined, he used to travel
 3 kilometers each day in a trolley rickshaw to attend school. Life
 tested him and his family when he approached the end of Class 5.</p>
 </div>
-<div
-style="display: flex; justify-content: center; gap: 30px; margin-top: 20px;">
-<!-- Image 1 -->
-<div style="text-align: center;">
-<img src="Images/mine/house1.jpg" alt="Amazon Plume" width="420" height="300">
+<div class="image-row">
+<div class="image-item">
+<img src="Images/mine/house1.jpg" alt="The house">
 <h4>
 The house
 </h4>
 </div>
 </div>
-<p><a name="Part 2"></a></p>
+<p><a name="Part2"></a></p>
 </div>
-<div id="part-2" class="section level2">
-<h2>Part 2</h2>
-<div
-style="border: 2px solid #007acc; font-family: &#39;Arial&#39;;border-radius: 6px; padding: 15px; background-color: #e6f2ff; margin: 20px 0; max-width: 1000px;text-align: justify;text-indent: 40px;">
+<div id="part-2-leaving-home" class="section level2">
+<h2>Part 2 – Leaving Home</h2>
+<div class="story-box">
 <p>👨‍👦 His father, driven by a dream to provide the best education
 possible, faced a difficult truth: their village lacked quality
 institutions. With no permanent job and a modest income, he made a bold
@@ -380,13 +452,14 @@ the top 45 candidates in the first round. The final selection required
 the students to stay overnight at the school, where they were evaluated
 not just on talent, but on character. He was chosen—one of only 15
 selected from the batch. Unsurprisingly, he also cleared the Navodaya
-Vidyalaya exam. When his father asked, “Where would you like to study?”
+Vidyalaya exam.</p>
+<p>When his father asked, “Where would you like to study?”<br />
 The 10-year-old replied with quiet conviction: “Rtapalli
 Vidyapitha.”</p>
 <p>💔 Sending their only son 200 kilometers away was a heart-wrenching
 decision. His parents wept. His mother couldn’t eat for days. But the
 boy, though aching inside, put on a brave face. “Don’t worry about me, I
-am okay”.</p>
+am okay.”</p>
 <p>🧺 He didn’t know how to wash his clothes or use the hostel toilets.
 But he wasn’t the only one—many of the boys were just as confused and
 scared. Slowly, they learned together, helping each other through the
@@ -397,8 +470,8 @@ time. During those prayers, the boy missed his family deeply. He would
 cry quietly, hiding his tears so no one could see. It became a part of
 his daily routine—missing home, but staying strong.</p>
 <p>🏠 Before every vacation, he would tell himself, “This time, I’ll say
-I don’t want to go back. I’ll stay home.” But once home, he never
-uttered a word of complaint.</p>
+I don’t want to go back. I’ll stay home.”<br />
+But once home, he never uttered a word of complaint.</p>
 <p>📚 The five years he spent at Rtapalli Vidyapitha helped him grow in
 amazing ways. He learned his first programming language in Class 7. By
 the time he reached Class 10, he could already write programs in BASIC,
@@ -413,24 +486,25 @@ kind Odia scientist living in the U.S. who built the school.</p>
 he didn’t just dream of becoming a scientist—he dreamed of becoming
 someone who could bring real change to the world.</p>
 </div>
-<div
-style="display: flex; justify-content: center; gap: 30px; margin-top: 20px;">
-<!-- Image 1 -->
-<div style="text-align: center;">
-<img src="Images/mine/rta1.jpg" alt="Amazon Plume" width="420" height="300">
+<div class="image-row">
+<div class="image-item">
+<img src="Images/mine/rta1.jpg" alt="The boy with schoolmates">
 <h4>
 The boy with his schoolmates
 </h4>
 </div>
-<!-- Image 1 -->
-<div style="text-align: center;">
-<img src="Images/mine/child1.jpg" alt="Amazon Plume" width="420" height="300">
+<div class="image-item">
+<img src="Images/mine/child1.jpg" alt="The boy">
 <h4>
 The boy
 </h4>
 </div>
 </div>
-<p><strong>Will continue…</strong></p>
+<p><br><br></p>
+<div style="text-align: center; font-style: italic; font-size: 18px;">
+✨ Will continue… ✨
+</div>
+<p><br><br></p>
 </div>
 
 

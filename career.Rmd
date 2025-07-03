@@ -8,79 +8,164 @@ output:
     self_contained: false
 ---
 
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 
-## Education & Research Timeline 🎓 
+<style>
+  body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f8fbff;
+    color: #2c3e50;
+    margin: 0;
+  }
 
+  .section-title {
+    text-align: center;
+    font-size: 24px;
+    margin: 30px 0 20px;
+    color: #007acc;
+    font-weight: 600;
+  }
 
-  <!-- University of São Paulo -->
-  <div style="display: flex; align-items: center;">
-   <a href="https://www5.usp.br/" target="_blank">
-    <img src="Institute logos/usp.png" alt="USP Brazil" style="width: 60px; margin-right: 15px;">
-   </a>
-   <div>
-   <div><strong>University of São Paulo, Brazil</strong></div>
-   <div>Postdoc <span style="color: gray;">(2023–2025)</span></div>
-   </div>
+  .timeline-entry {
+    display: flex;
+    align-items: center;
+    margin: 20px auto;
+    max-width: 850px;
+    background: #ffffffdd;
+    padding: 12px 18px;
+    border-left: 4px solid #007acc;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease;
+  }
+
+  .timeline-entry:hover {
+    transform: scale(1.01);
+    background: #f0f8ff;
+  }
+
+  .timeline-entry img {
+    width: 60px;
+    margin-right: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+
+  .timeline-entry div {
+    display: flex;
+    flex-direction: column;
+    font-size: 15.5px;
+  }
+
+  .timeline-entry strong {
+    font-weight: 600;
+    font-size: 16px;
+    color: #003366;
+  }
+
+  .timeline-entry span {
+    color: gray;
+    font-size: 14px;
+    margin-top: 2px;
+  }
+
+  .achievements {
+    max-width: 850px;
+    margin: 20px auto 50px;
+    background: #ffffffdd;
+    padding: 20px 28px;
+    border: 2px solid #007acc;
+    border-radius: 12px;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.04);
+    font-size: 15.5px;
+    line-height: 1.6;
+  }
+
+  .achievements ul {
+    padding-left: 20px;
+  }
+
+  .achievements li {
+    margin-bottom: 6px;
+  }
+
+  .achievements b {
+    color: #003366;
+  }
+</style>
+
+<!-- 🎓 Education & Research Timeline -->
+<h3 class="section-title">Education & Research Timeline 🎓</h3>
+
+<div class="timeline-entry">
+  <a href="https://www5.usp.br/" target="_blank">
+    <img src="Institute logos/usp.png" alt="USP">
+  </a>
+  <div>
+   <strong>University of São Paulo, Brazil</strong>
+   <span>Postdoc (2023–2025)</span>
   </div>
-  
-  
-   <!-- PRL ahmedabad -->
-  <div style="display: flex; align-items: center;">
-   <a href="https://www.prl.res.in/" target="_blank">
-    <img src="Institute logos/prl.png" alt="USP Brazil" style="width: 60px; margin-right: 15px;">
-   </a>
-   <div>
-   <div><strong>Physical Research Laboratory, Ahmedabad</strong></div>
-   <div>Postdoc <span style="color: gray;">(2022–2023)</span></div>
-   </div>
+</div>
+
+<div class="timeline-entry">
+  <a href="https://www.prl.res.in/" target="_blank">
+    <img src="Institute logos/prl.png" alt="PRL">
+  </a>
+  <div>
+   <strong>Physical Research Laboratory, Ahmedabad</strong>
+   <span>Postdoc (2022–2023)</span>
   </div>
+</div>
 
-
-   <!-- PRL ahmedabad -->
-  <div style="display: flex; align-items: center;">
-   <a href="https://www.prl.res.in/" target="_blank">
-    <img src="Institute logos/iitgn.png" alt="USP Brazil" style="width: 60px; margin-right: 15px;">
-   </a>
-   <div>
-   <div><strong>Indian Institute of Technology, Gandhinagar</strong></div>
-   <div>PhD <span style="color: gray;">(2017–2022)</span></div>
-   </div>
+<div class="timeline-entry">
+  <a href="https://www.iitgn.ac.in/" target="_blank">
+    <img src="Institute logos/iitgn.png" alt="IITGN">
+  </a>
+  <div>
+   <strong>Indian Institute of Technology, Gandhinagar</strong>
+   <span>PhD (2017–2022)</span>
   </div>
-  
-  
-  <div style="display: flex; align-items: center;">
-   <a href="https://www.iitbbs.ac.in/" target="_blank">
-    <img src="Institute logos/iitbbs.png" alt="USP Brazil" style="width: 60px; margin-right: 15px;">
-   </a>
-   <div>
-   <div><strong>Indian Institute of Technology, Bhubaneswar</strong></div>
-   <div>MSc <span style="color: gray;">(2015-2017)</span></div>
-   </div>
+</div>
+
+<div class="timeline-entry">
+  <a href="https://www.iitbbs.ac.in/" target="_blank">
+    <img src="Institute logos/iitbbs.png" alt="IITBBS">
+  </a>
+  <div>
+   <strong>Indian Institute of Technology, Bhubaneswar</strong>
+   <span>MSc (2015–2017)</span>
   </div>
+</div>
 
-
-  <div style="display: flex; align-items: center;">
-   <a href="https://www.ravenshawuniversity.ac.in/" target="_blank">
-    <img src="Institute logos/rav.jpeg" alt="USP Brazil" style="width: 60px; margin-right: 15px;">
-   </a>
-   <div>
-   <div><strong>Ravenshaw University, Cuttack</strong></div>
-   <div>BSc <span style="color: gray;">(2012–2015)</span></div>
-   </div>
+<div class="timeline-entry">
+  <a href="https://www.ravenshawuniversity.ac.in/" target="_blank">
+    <img src="Institute logos/rav.jpeg" alt="Ravenshaw">
+  </a>
+  <div>
+   <strong>Ravenshaw University, Cuttack</strong>
+   <span>BSc (2012–2015)</span>
   </div>
+</div>
 
-<br> <br>
+<!-- 🏆 Achievements Section -->
+<h3 class="section-title">Academic Achievements 🏆</h3>
 
-## Academic Achievements 🏆 
-
-- **IIT-JAM (2015):** Secured All India Rank **58**
-- **DST-INSPIRE Scholarship (2012–2017):** Awarded for academic excellence
-- **GATE (2017):** Achieved All India Rank **267**
-- **CSIR-UGC NET – LS (Dec 2015):** Qualified with All India Rank **19**
-- **CSIR-UGC NET – JRF:**
-  - **June 2016:** All India Rank **16**
-  - **Dec 2016:** All India Rank **10**
-  - **Dec 2017:** All India Rank **103**
-- **IELTS (2017):** Scored **Band 7**
-- **Gold Medalist & Silver Medalist** of IIT Bhubaneswar
-- **Best MSc Project Award:** Recognized for outstanding research contribution
+<div class="achievements">
+  <ul>
+    <li><b>IIT-JAM (2015):</b> Secured All India Rank <b>58</b></li>
+    <li><b>DST-INSPIRE Scholarship (2012–2017):</b> Awarded for academic excellence</li>
+    <li><b>GATE (2017):</b> Achieved All India Rank <b>267</b></li>
+    <li><b>CSIR-UGC NET – LS (Dec 2015):</b> Qualified with All India Rank <b>19</b></li>
+    <li><b>CSIR-UGC NET – JRF:</b>
+      <ul>
+        <li>June 2016: Rank <b>16</b></li>
+        <li>Dec 2016: Rank <b>10</b></li>
+        <li>Dec 2017: Rank <b>103</b></li>
+      </ul>
+ </li>
+  <li><b>IELTS (2017):</b> Scored <b>Band 7</b></li>
+  <li><b>Gold & Silver Medals:</b> Recipient at IIT Bhubaneswar</li>
+  <li><b>Best MSc Project Award:</b> Recognized for outstanding research</li>
+  </ul>
+</div>

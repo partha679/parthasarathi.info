@@ -7,8 +7,6 @@ navbar:
   left:
     - text: "Home"
       href: index.html
-    - text: "About"
-      href: about.html
     - text: "Academic"
       menu:
         - text: "Career"
@@ -29,6 +27,8 @@ navbar:
           href: youtube.html
         - text: "Social media"
           href: Social_media.html
+    - text: "About"
+      href: about.html
     - text: "Contact"
       href: Contact.html
 

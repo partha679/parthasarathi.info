@@ -1,5 +1,5 @@
 ---
-title: "Field trips"
+title: "Field Trips"
 site: "index.html"
 output:
   html_document:
@@ -8,74 +8,138 @@ output:
     self_contained: false
 ---
 
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 
-## 1. Gorongosa national park, Mozambique
+<style>
+  body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f8fbff;
+    color: #2c3e50;
+  }
 
-In 2025, I had the extraordinary opportunity to conduct fieldwork in Gorongosa National Park, Mozambique—one of Africa’s most ecologically and geologically rich landscapes. My primary objective was to collect samples for ¹⁰Be dating of Miocene landforms, aiming to constrain the timing of life evolution in this tectonically active region. Working under the mentorship of Prof. René Bobe and Prof. Susana Carvalho—both leading experts in paleoanthropology and evolutionary history—I was part of a multidisciplinary team exploring how landscapes shape life over geological timescales. The fieldwork was both technically demanding and intellectually expansive, blending geomorphology, paleoecology, and evolutionary science in a setting that felt like a living archive of Earth’s history.
+  .field-section {
+    max-width: 950px;
+    margin: 40px auto;
+    padding: 20px 25px;
+    background: #ffffffee;
+    border-left: 5px solid #007acc;
+    border-radius: 10px;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.04);
+  }
 
-<div style="display: flex; justify-content: center; gap: 30px; margin-top: 20px;">
+  .field-section h3 {
+    font-size: 22px;
+    color: #003366;
+    margin-top: 0;
+  }
 
- <!-- Image 1 -->
- <div style="text-align: center;">
-  <h4>Chitengo, Apr 2025</h4>
-  <img src="Images/Field/MOZ1.JPG" alt="Amazon Plume" width="430" height="280">
- </div>
+  .field-section p {
+    font-size: 15.5px;
+    line-height: 1.6;
+    text-align: justify;
+  }
 
- <!-- Image 2 -->
-<div style="text-align: center;">
-  <h4>Gorongosa national park, Apr 2025 </h4>
-  <img src="Images/Field/MOZ2.jpeg" alt="Satellite View" width="430" height="280">
- </div>
+  .image-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 18px;
+    flex-wrap: wrap;
+  }
+
+  .image-item {
+    text-align: center;
+  }
+
+  .image-item h4 {
+    font-size: 15px;
+    margin: 8px 0;
+    color: #007acc;
+  }
+
+  .image-item img {
+    width: 430px;
+    height: 280px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+
+  .image-item img:hover {
+    transform: scale(1.025);
+  }
+
+  h2, h3 {
+    text-align: center;
+    color: #007acc;
+    margin-top: 40px;
+  }
+</style>
+
+<!-- Trip 1 -->
+<div class="field-section">
+  <h3>1. Gorongosa National Park, Mozambique</h3>
+  <p>
+    In 2025, I had the extraordinary opportunity to conduct fieldwork in Gorongosa National Park, Mozambique—one of Africa’s most ecologically and geologically rich landscapes. My primary objective was to collect samples for ¹⁰Be dating of Miocene landforms, aiming to constrain the timing of life evolution in this tectonically active region. Working under the mentorship of Prof. René Bobe and Prof. Susana Carvalho—both leading experts in paleoanthropology and evolutionary history—I was part of a multidisciplinary team exploring how landscapes shape life over geological timescales.
+  </p>
+
+<div class="image-grid" style="display: flex; justify-content: center; align-items: flex-start; gap: 30px; flex-wrap: nowrap; margin-top: 20px;">
+  <div class="image-item" style="text-align: center; flex: 1;">
+   <h4 style="margin-bottom: 10px;">Chitengo, Apr 2025</h4>
+   <img src="Images/Field/MOZ1.JPG" alt="Gorongosa 1" style="width: 100%; max-width: 430px; height: 280px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+  </div>
+  <div class="image-item" style="text-align: center; flex: 1;">
+   <h4 style="margin-bottom: 10px;">Gorongosa National Park, Apr 2025</h4>
+   <img src="Images/Field/MOZ2.jpeg" alt="Gorongosa 2" style="width: 100%; max-width: 430px; height: 280px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+  </div>
+</div>
 
 </div>
 
-<br>
+<!-- Trip 2 -->
+<div class="field-section">
+  <h3>2. Ladakh, India</h3>
+  <p>
+    Between 2018 and 2021, I participated in three field campaigns across Ladakh, each with a distinct scientific focus. The 2018 expedition centered on exposure age dating, where we sampled glacially transported boulders and glacially polished surfaces to reconstruct the timing of glaciation and landscape stabilization. In 2019, our attention shifted to relict lake deposits, which serve as sedimentary records of past hydrological and climatic conditions. The final trip in 2021 allowed us to revisit key sites, refine our sampling strategy, and validate earlier findings. These expeditions, guided by Prof. Navin Juyal, were instrumental in shaping my understanding of high-altitude geomorphic processes and the application of cosmogenic nuclide techniques in extreme environments.
+  </p>
 
-## 2. Ladakh, India
-
-Between 2018 and 2021, I participated in three field campaigns across Ladakh, each with a distinct scientific focus. The 2018 expedition centered on exposure age dating, where we sampled glacially transported boulders and glacially polished surfaces to reconstruct the timing of glaciation and landscape stabilization. In 2019, our attention shifted to relict lake deposits, which serve as sedimentary records of past hydrological and climatic conditions. The final trip in 2021 allowed us to revisit key sites, refine our sampling strategy, and validate earlier findings. These expeditions, guided by Prof. Navin Juyal, were instrumental in shaping my understanding of high-altitude geomorphic processes and the application of cosmogenic nuclide techniques in extreme environments.
-
-<div style="display: flex; justify-content: center; gap: 30px; margin-top: 20px;">
-
- <!-- Image 1 -->
- <div style="text-align: center;">
-  <h4>Nubra, Oct 2018</h4>
-  <img src="Images/Field/Ladakh1.JPG" alt="Amazon Plume" width="430" height="280">
- </div>
-
- <!-- Image 2 -->
-<div style="text-align: center;">
-  <h4>Panamik, Sept 2019 </h4>
-  <img src="Images/Field/Ladakh2.JPG" alt="Satellite View" width="430" height="280">
- </div>
+<div class="image-grid" style="display: flex; justify-content: center; align-items: flex-start; gap: 30px; flex-wrap: nowrap; margin-top: 20px;">
+  <div class="image-item" style="text-align: center; flex: 1;">
+   <h4 style="margin-bottom: 10px;">Nubra, Oct 2018</h4>
+   <img src="Images/Field/Ladakh1.JPG" alt="Ladakh 1" style="width: 100%; max-width: 430px; height: 280px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+  </div>
+  <div class="image-item" style="text-align: center; flex: 1;">
+   <h4 style="margin-bottom: 10px;">Panamik, Sept 2019</h4>
+   <img src="Images/Field/Ladakh2.JPG" alt="Ladakh 2" style="width: 100%; max-width: 430px; height: 280px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+  </div>
+</div>
 
 </div>
 
-<br>
-
-## 3. Uttarakhand, India
-
-In 2022, I conducted fieldwork in the Himalayan foothills of Uttarakhand, focusing on river sediment sampling to estimate catchment-scale denudation rates. Accompanied by Prof. Navin Juyal and Prof. S. P. Sati, I navigated steep terrain and monsoon-fed rivers to collect sediment samples that would later be analyzed for cosmogenic nuclide concentrations. This work aimed to quantify erosion rates and understand the interplay between tectonics, climate, and surface processes in one of the most dynamic mountain belts on Earth. The trip was a blend of rigorous field science and meaningful collaboration, reinforcing the importance of interdisciplinary approaches in geomorphic research.
-
-
-## 4. Chilika Lake, Odisha
-
-In 2016, I conducted two fieldworks at Chilika Lake, Odisha,  with Prof. Raj K. Singh and Prof. S H Farooq, focusing on surface sediment and sediment core sampling. Our goal was to reconstruct the lake’s recent environmental history through foraminiferal analysis, using microfossil assemblages to infer salinity changes, sediment dynamics, and monsoonal variability. Navigating the lake’s shallow, brackish waters and sampling across ecological gradients, we gathered a dataset that bridges modern processes with paleoenvironmental reconstructions. This experience deepened my understanding of coastal sedimentology and the power of microfossils in decoding environmental change.
-
-<div style="display: flex; justify-content: center; gap: 30px; margin-top: 20px;">
-
- <!-- Image 1 -->
- <div style="text-align: center;">
-  <h4>Chilika, 2016</h4>
-  <img src="Images/Field/Chilika1.jpg" alt="Amazon Plume" width="430" height="280">
- </div>
-
- <!-- Image 2 -->
-<div style="text-align: center;">
-  <h4>Chilika, 2016 </h4>
-  <img src="Images/Field/Chilika2.jpg" alt="Satellite View" width="430" height="280">
- </div>
-
+<!-- Trip 3 -->
+<div class="field-section">
+  <h3>3. Uttarakhand, India</h3>
+  <p>
+    In 2022, I conducted fieldwork in the Himalayan foothills of Uttarakhand, focusing on river sediment sampling to estimate catchment-scale denudation rates. Accompanied by Prof. Navin Juyal and Prof. S. P. Sati, I navigated steep terrain and monsoon-fed rivers to collect sediment samples that would later be analyzed for cosmogenic nuclide concentrations. This work aimed to quantify erosion rates and understand the interplay between tectonics, climate, and surface processes in one of the most dynamic mountain belts on Earth.
+  </p>
 </div>
 
-<br>
+<!-- Trip 4 -->
+<div class="field-section">
+  <h3>4. Chilika Lake, Odisha</h3>
+  <p>
+    In 2016, I conducted two fieldworks at Chilika Lake, Odisha, with Prof. Raj K. Singh and Prof. S H Farooq, focusing on surface sediment and sediment core sampling. Our goal was to reconstruct the lake’s recent environmental history through foraminiferal analysis, using microfossil assemblages to infer salinity changes, sediment dynamics, and monsoonal variability. Navigating the lake’s shallow, brackish waters and sampling across ecological gradients, we gathered a dataset that bridges modern processes with paleoenvironmental reconstructions.
+  </p>
+
+<div class="image-grid" style="display: flex; justify-content: center; align-items: flex-start; gap: 30px; flex-wrap: nowrap; margin-top: 20px;">
+  <div class="image-item" style="text-align: center; flex: 1;">
+   <h4 style="margin-bottom: 10px;">Chilika, 2016</h4>
+   <img src="Images/Field/Chilika1.jpg" alt="Chilika 1" style="width: 100%; max-width: 430px; height: 280; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+  </div>
+
+  <div class="image-item" style="text-align: center; flex: 1;">
+   <h4 style="margin-bottom: 10px;">Chilika, 2016</h4>
+   <img src="Images/Field/Chilika2.jpg" alt="Chilika 2" style="width: 100%; max-width: 430px; height: 280; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+  </div>
+</div>
+

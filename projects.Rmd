@@ -8,35 +8,128 @@ output:
     self_contained: false
 ---
 
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 
-## Primary project
+<style>
+  body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f4faff;
+    color: #2c3e50;
+    margin: 0;
+  }
 
-<div style="text-align: center; margin-top: 20px;">
+  .section-title {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 30px;
+    color: #007acc;
+    font-weight: 600;
+  }
 
-<span style="font-size:18px; color:darkgreen;">
- <b> Abrupt changes in the deep circulation of the western tropical Atlantic Ocean during the last two glacial periods </b>
-</span>
+  .project-box {
+    max-width: 950px;
+    margin: 20px auto 40px;
+    background: linear-gradient(to right, #eaf6ff, #ffffff);
+    border: 2px solid #007acc;
+    border-radius: 12px;
+    padding: 25px 30px;
+    box-shadow: 0 5px 14px rgba(0, 0, 0, 0.05);
+  }
 
-<span style="font-size:18px; color:blue;">
- <b> Supervisor- </b> Prof. Cristiano M Chiessi, Univeristy of Sao Paulo, Brazil
-</span>
+  .project-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
 
-<span style="font-size:18px; color:blue;">
- <b> Funded by- </b> Sao Paulo Research Foundation (FAPESP)
-</span>
+  .project-header span {
+    display: block;
+    font-size: 18px;
+    margin: 6px 0;
+  }
 
+  .project-title {
+    color: darkgreen;
+    font-weight: 600;
+  }
+
+  .project-meta {
+    color: #007acc;
+    font-weight: 500;
+  }
+
+  .project-body {
+    text-align: justify;
+    font-size: 15.8px;
+    line-height: 1.6;
+    margin-top: 15px;
+  }
+
+  .project-image {
+    display: flex;
+    justify-content: center;
+    margin: 25px 0;
+  }
+
+  .project-image img {
+    max-width: 100%;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+
+  .collab-section {
+    max-width: 850px;
+    margin: 10px auto 40px;
+    font-size: 15.5px;
+    padding: 10px 20px;
+    border-left: 4px solid #007acc;
+    background-color: #ffffffcc;
+  }
+
+  .collab-section h3 {
+    color: #003366;
+    margin-top: 0;
+  }
+</style>
+
+<!-- 🔬 Main Project Section -->
+<h3 class="section-title">Primary Project</h3>
+
+<div class="project-box">
+ <div class="project-header">
+   <span class="project-title">
+      Abrupt changes in the deep circulation of the western tropical Atlantic Ocean during the last two glacial periods
+   </span>
+
+   <span class="project-meta">
+      <b>Supervisor:</b> Prof. Cristiano M Chiessi, University of São Paulo, Brazil
+   </span>
+
+   <span class="project-meta">
+      <b>Funded by:</b> São Paulo Research Foundation (FAPESP)
+   </span>
+  </div>
+
+<div class="project-body">
+  <p>
+    Understanding how the Atlantic Meridional Overturning Circulation (AMOC) varies on centennial timescales is crucial, as such fluctuations can impact global climate by altering heat transport between hemispheres and influencing how carbon is exchanged between the ocean and atmosphere. However, our knowledge remains limited due to the short span of instrumental data and the lack of high-resolution paleo-records capable of resolving changes at this scale.
+  </p>
+  <p>
+    This project addresses that gap by combining radiocarbon-based ventilation age reconstructions from a uniquely high-resolution sediment core in the western equatorial Atlantic with state-of-the-art numerical modeling. By focusing on the last deglaciation period—particularly Heinrich Stadial 1—this research aims to provide new insights into centennial-scale AMOC variability and its potential role in modulating regional and global climate systems, including hydroclimate shifts and ocean-atmosphere CO₂ exchange.
+  </p>
 </div>
 
-Understanding how the Atlantic Meridional Overturning Circulation (AMOC) varies on centennial timescales is crucial, as such fluctuations can impact global climate by altering heat transport between hemispheres and influencing how carbon is exchanged between the ocean and atmosphere. However, our knowledge remains limited due to the short span of instrumental data and the lack of high-resolution paleo-records capable of resolving changes at this scale. This project addresses that gap by combining radiocarbon-based ventilation age reconstructions from a uniquely high-resolution sediment core in the western equatorial Atlantic with state-of-the-art numerical modeling. By focusing on the last deglaciation period—particularly Heinrich Stadial 1—this research aims to provide new insights into centennial-scale AMOC variability and its potential role in modulating regional and global climate systems, including hydroclimate shifts and ocean-atmosphere CO₂ exchange.
-
-
-
-<div style="text-align: center; margin-top: 20px;">
-  <img src="Images/Science/ocean_co2.jpg" alt="Descriptive Text" width="400">
+ <div class="project-image">
+  <img src="Images/Science/ocean_co2.jpg" alt="Ocean CO2 Schematic">
+ </div>
 </div>
 
 
-<br><br>
-
-## Collaboration
-- Paleo-Primate Project Gorongosa at Gorongosa National Park, Mozambique
+<!-- 🤝 Collaborations Section -->
+<div class="collab-section">
+  <h3>🌍 Collaboration</h3>
+  <ul>
+    <li>Paleo-Primate Project Gorongosa at Gorongosa National Park, Mozambique</li>
+  </ul>
+</div>

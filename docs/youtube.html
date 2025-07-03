@@ -11,7 +11,7 @@
 
 
 
-<title>youtube.knit</title>
+<title>🎥 Watch My Travel Videos</title>
 
 <script src="site_libs/header-attrs-2.29/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -245,9 +245,6 @@ $(document).ready(function () {
         <li>
   <a href="index.html">Home</a>
 </li>
-<li>
-  <a href="about.html">About</a>
-</li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Academic
@@ -291,6 +288,9 @@ $(document).ready(function () {
   </ul>
 </li>
 <li>
+  <a href="about.html">About</a>
+</li>
+<li>
   <a href="Contact.html">Contact</a>
 </li>
       </ul>
@@ -305,84 +305,129 @@ $(document).ready(function () {
 
 
 
+<h1 class="title toc-ignore">🎥 Watch My Travel Videos</h1>
 
 </div>
 
 
-<p><br><br><br></p>
-<div id="watch-my-video" class="section level2">
-<h2>Watch My Video</h2>
-<p><span
-style="font-family: &#39;Segoe UI&#39;, sans-serif; font-size: 38px; color: darkslateblue;">
-1. Mozambique </span></p>
-<table>
-<tr>
-<th>
-Gorongosa national park
-</th>
-<th>
-Title 2
-</th>
-</tr>
-<tr>
-<td>
-<iframe width="425" height="300" src="https://www.youtube.com/embed/taUGhlpv28M?si=6uwUVYGmtlm60YUc" frameborder="0" allowfullscreen>
-</iframe>
-</td>
-<td style="padding-left: 40px;">
-<iframe width="425" height="300" src="https://www.youtube.com/embed/taUGhlpv28M?si=6uwUVYGmtlm60YUc" frameborder="0" allowfullscreen>
-</iframe>
-</td>
-</tr>
-</table>
-<p><br></p>
-<p><span
-style="font-family: &#39;Segoe UI&#39;, sans-serif; font-size: 38px; color: darkslateblue;">
-2. Peru </span></p>
-<table>
-<tr>
-<th>
-The oldest pyramids
-</th>
-<th>
-Barranco
-</th>
-</tr>
-<tr>
-<td>
-<iframe width="425" height="300" src="https://www.youtube.com/embed/DS9Z_Y57eT8?si=AVIrEJaB10JI7BmH" frameborder="0" allowfullscreen>
-</iframe>
-</td>
-<td style="padding-left: 40px;">
-<iframe width="425" height="300" src="https://www.youtube.com/embed/IzwsoPo3nZc?si=rT0gmZYEJ3TBQN-c" frameborder="0" allowfullscreen>
-</iframe>
-</td>
-</tr>
-</table>
-<p><br></p>
-<p><span
-style="font-family: &#39;Segoe UI&#39;, sans-serif; font-size: 38px; color: darkslateblue;">
-3. Qatar </span></p>
-<table>
-<tr>
-<th>
+<!-- Styling -->
+<style>
+  .video-section {
+    margin: 25px auto 15px;
+    padding: 18px 24px;
+    background: linear-gradient(to top right, #f0faff, #ffffff);
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.07);
+    max-width: 1000px;
+  }
+
+  .video-title {
+    font-size: 24px;
+    color: #283593;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 600;
+  }
+
+  .video-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+
+  .video-item {
+    text-align: center;
+    flex: 1;
+    max-width: 440px;
+    margin: 0;
+    padding: 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .video-item:hover {
+    transform: scale(1.025);
+    box-shadow: 0 10px 22px rgba(0, 123, 255, 0.22);
+  }
+
+  .video-item h4 {
+    margin-top: 4px;
+    margin-bottom: 0;
+    font-weight: 500;
+    color: #003366;
+    font-size: 15px;
+    line-height: 1.4;
+  }
+
+  iframe {
+    border-radius: 10px;
+    width: 100%;
+    height: 245px;
+    border: none;
+    margin-bottom: 2px;
+  }
+</style>
+<br> <!-- Mozambique Section -->
+<div class="video-section">
+<div class="video-title">
+Mozambique 🌄
+</div>
+<div class="video-grid">
+<div class="video-item">
+<iframe src="https://www.youtube.com/embed/taUGhlpv28M?si=6uwUVYGmtlm60YUc" allowfullscreen></iframe>
+<h4>
+Gorongosa National Park
+</h4>
+</div>
+<div class="video-item">
+<iframe src="https://www.youtube.com/embed/taUGhlpv28M?si=6uwUVYGmtlm60YUc" allowfullscreen></iframe>
+<h4>
+Sunset Safari
+</h4>
+</div>
+</div>
+</div>
+<!-- Peru Section -->
+<div class="video-section">
+<div class="video-title">
+Peru 🦙
+</div>
+<div class="video-grid">
+<div class="video-item">
+<iframe src="https://www.youtube.com/embed/DS9Z_Y57eT8?si=AVIrEJaB10JI7BmH" allowfullscreen></iframe>
+<h4>
+The Oldest Pyramids
+</h4>
+</div>
+<div class="video-item">
+<iframe src="https://www.youtube.com/embed/IzwsoPo3nZc?si=rT0gmZYEJ3TBQN-c" allowfullscreen></iframe>
+<h4>
+Barranco District
+</h4>
+</div>
+</div>
+</div>
+<!-- Qatar Section -->
+<div class="video-section">
+<div class="video-title">
+Qatar 🕌
+</div>
+<div class="video-grid">
+<div class="video-item">
+<iframe src="https://www.youtube.com/embed/xflLMM0wCJ0?si=GlTtjbIcJ2yUBPRR" allowfullscreen></iframe>
+<h4>
 Katara Cultural Village
-</th>
-<th>
-Qatari food
-</th>
-</tr>
-<tr>
-<td>
-<iframe width="425" height="300" src="https://www.youtube.com/embed/xflLMM0wCJ0?si=GlTtjbIcJ2yUBPRR" frameborder="0" allowfullscreen>
-</iframe>
-</td>
-<td style="padding-left: 40px;">
-<iframe width="425" height="300" src="https://www.youtube.com/embed/KV_ZWtSPBlo?si=lWleXMlGe42ilAJ8" frameborder="0" allowfullscreen>
-</iframe>
-</td>
-</tr>
-</table>
+</h4>
+</div>
+<div class="video-item">
+<iframe src="https://www.youtube.com/embed/KV_ZWtSPBlo?si=lWleXMlGe42ilAJ8" allowfullscreen></iframe>
+<h4>
+Qatari Cuisine
+</h4>
+</div>
+</div>
 </div>
 
 

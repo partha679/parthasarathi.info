@@ -245,9 +245,6 @@ $(document).ready(function () {
         <li>
   <a href="index.html">Home</a>
 </li>
-<li>
-  <a href="about.html">About</a>
-</li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Academic
@@ -291,6 +288,9 @@ $(document).ready(function () {
   </ul>
 </li>
 <li>
+  <a href="about.html">About</a>
+</li>
+<li>
   <a href="Contact.html">Contact</a>
 </li>
       </ul>
@@ -310,59 +310,213 @@ $(document).ready(function () {
 </div>
 
 
+<!-- Google Fonts & Typed.js -->
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 <style>
-.img-hover {
-  transition: all 0.3s ease;
-  filter: brightness(100%);
-  box-shadow: none;
-}
+  body {
+    font-family: 'Fira Sans', sans-serif;
+    margin: 0;
+    background-color: #ffffff;
+    animation: bgColorShift 15s infinite alternate;
+    color: #2c3e50;
+  }
 
-.img-hover:hover {
-  filter: brightness(85%);
-  box-shadow: 0 0 15px #666;
-}
+  @keyframes bgColorShift {
+    0%   { background-color: #ffffff; }
+    25%  { background-color: #f4faff; }
+    50%  { background-color: #eaf6ff; }
+    75%  { background-color: #e3f2ff; }
+    100% { background-color: #ffffff; }
+  }
+
+  .hero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px 20px;
+    gap: 30px;
+    background: linear-gradient(to right, #e3f2ff, #ffffff);
+    border-bottom: 2px solid #007acc;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 0 0 14px 14px;
+  }
+
+  .hero-text {
+    max-width: 550px;
+    text-align: left;
+    padding: 10px;
+  }
+
+  .hero-text h1 {
+    font-size: 36px;
+    margin: 0;
+    background: linear-gradient(to right, #007acc, #003366);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .typed-role {
+    font-size: 18px;
+    color: darkgreen;
+    margin: 8px 0 5px;
+    height: 22px;
+  }
+
+  .emoji-line {
+    font-size: 18px;
+    margin-top: 4px;
+  }
+
+  .hero img {
+    width: 220px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+  }
+
+  .hero img:hover {
+    transform: scale(1.04);
+  }
+
+  .about-box {
+    border: 2px solid #007acc;
+    border-radius: 10px;
+    padding: 18px 25px;
+    background-color: #ffffffcc;
+    margin: 30px auto 40px;
+    max-width: 900px;
+    text-align: justify;
+    font-size: 15.5px;
+    text-indent: 35px;
+    box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.04);
+  }
+
+  .section-title {
+    text-align: center;
+    font-size: 20px;
+    margin: 30px 0 15px;
+    color: #007acc;
+    font-weight: 600;
+  }
+
+  .footer-msg {
+    text-align: center;
+    margin-top: 30px;
+    padding-bottom: 20px;
+    font-size: 15px;
+    color: #555;
+  }
+
+  .footer-msg img {
+    vertical-align: middle;
+    margin-left: 5px;
+    margin-bottom: 3px;
+  }
+
+  .contact-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007acc;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 25px;
+    font-size: 15px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.2);
+    text-decoration: none;
+    z-index: 999;
+    transition: 0.3s ease;
+  }
+
+  .contact-float:hover {
+    background-color: #005f99;
+    transform: scale(1.05);
+  }
 </style>
-<p><img src="solo1.jpg" class="img-hover" style="float: right; margin-left: 20px; width: 300px;" /></p>
-<p><br></p>
-<p>Hi, I’m <br></p>
-<p><span
-style="font-family: &#39;Segoe UI&#39;, sans-serif; font-size: 38px; color: darkslateblue;">
-<b> PARTHA SARATHI JENA</b> </span> <br></p>
-<p><span style="font-size:18px; color:darkgreen;"> <b> Researcher 👩🏼‍🎓,
-Educator 🧑‍🏫, Digital Storyteller 🎥 </b> </span></p>
-<p><br><br><br><br><br><br></p>
-<h4 style="margin-top: 0; color: #007acc;">
-📌 About me
-</h4>
-<div
-style="border: 2px solid #007acc; border-radius: 6px; padding: 15px; background-color: #e6f2ff; margin: 20px 0; max-width: 1000px;text-align: justify;text-indent: 40px;">
-<p style="margin-bottom: 0;">
-<p>I am a researcher, specializing in (paleo)climate studies, with a
-focus on geochemical proxies—particularly cosmogenic nuclides—to unravel
+<!-- 🧑 Hero Section -->
+<div class="hero">
+<p><img src="solo1.jpg" alt="Partha Sarathi Jena"></p>
+<div class="hero-text">
+<h1>
+<b>PARTHA SARATHI JENA</b>
+</h1>
+<div class="typed-role">
+<span id="typed"></span>
+</div>
+<div class="emoji-line">
+🌍 📚 🎓 ⛰️ 🧪 📷 🛰️
+</div>
+</div>
+</div>
+<script>
+  var typed = new Typed('#typed', {
+    strings: [
+      "👨‍🔬 Researcher",
+      "🧑‍🏫 Educator",
+      "🎥 Digital Storyteller",
+      "🌦 Climate Explorer️",
+      "✍️ Science Communicator"
+    ],
+    typeSpeed: 45,
+    backSpeed: 20,
+    backDelay: 1800,
+    loop: true
+  });
+</script>
+<p><a href="contact.html" class="contact-float">💬 Contact Me</a></p>
+<hr />
+<h3 style="margin-bottom: 8px;">
+📌 About Me
+</h3>
+<style>
+  .about-box {
+    border: 2px solid #007acc;
+    border-radius: 10px;
+    padding: 20px 28px;
+    background-color: #ffffffcc;
+    margin: 5px auto 30px;  /* Reduced space above and below the box */
+    max-width: 900px;
+    text-align: justify;
+    font-family: 'Helvetica', Helvetica, sans-serif;
+    font-size: 14.2px;
+    line-height: 1.6;
+    font-weight: 400;
+    box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.04);
+  }
+</style>
+<div class="about-box">
+<p>
+I am a researcher, specializing in (paleo)climate studies, with a focus
+on geochemical proxies—particularly cosmogenic nuclides—to unravel
 Earth’s environmental history. My work spans a range of dynamic
 landscapes and marine systems, including the Indian Himalayas, the
-northern Indian Ocean, and the equatorial Atlantic Ocean.</p>
-<p>Beyond the lab and field, I’m passionate about teaching, programming,
+northern Indian Ocean, and the equatorial Atlantic Ocean.
+</p>
+<p>
+Beyond the lab and field, I’m passionate about teaching, programming,
 and exploring new places. I enjoy translating complex scientific ideas
 into engaging learning experiences, whether in the classroom or through
-articles/ videos. When I’m not analyzing isotopes or writing papers,
+articles/videos. When I’m not analyzing isotopes or writing papers,
 you’ll likely find me on the road—camera in hand—capturing stories from
-my travels and turning them into cinematic travel videos.</p>
-<p>📬 Feel free to reach out if you’d like to discuss research ideas,
-share insights, or explore potential collaborations.</p>
+my travels and turning them into cinematic travel videos.
+</p>
+<p>
+Feel free to reach out if you’d like to discuss research ideas, share
+insights, or explore potential collaborations.
 </p>
 </div>
-<p><br><br><br></p>
-<p style="text-align:center;">
-<span style="font-size:18px; color:blue;"> Built with a heart full of ❤️
-and a pinch of
-<img src="https://www.r-project.org/logo/Rlogo.png" alt="R Logo" width="40" style="vertical-align:middle; margin-right:10px;">
-</span>
+<div class="footer-msg">
+<p>
+Built with ❤️ and a pinch of
+<img src="https://www.r-project.org/logo/Rlogo.png" alt="R Logo" width="26">
 </p>
-<p style="text-align:center;">
-<span style="font-size:16px; color:black;"> Thanks for visiting! Drop me
-a note — even a small message can mean a lot. </span>
+<p>
+Thanks for visiting! Drop me a note — even a small message can mean a
+lot.
 </p>
+</div>
 
 
 
