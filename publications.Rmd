@@ -90,6 +90,10 @@ body {
   font-weight: bold;
   color: #007BFF;
 }
+.blue {
+  color: darkblue !important;
+  font-weight: bold;
+}
 </style>
 
 
@@ -112,23 +116,18 @@ a:hover {
 </style>
 
 
+<!-- PROFILE ICONS -->
+<!-- PROFILE ICONS -->
 <div class="icon-row">
-
-  <!-- ORCID -->
   <a href="https://orcid.org/0000-0002-2232-4212" target="_blank" class="icon-link" title="ORCID">
     <img src="https://upload.wikimedia.org/wikipedia/commons/0/06/ORCID_iD.svg" alt="ORCID">
   </a>
-
-  <!-- ResearchGate -->
   <a href="https://www.researchgate.net/profile/Partha-Jena?ev=hdr_xprf" target="_blank" class="icon-link" title="ResearchGate">
     <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/ResearchGate_icon_SVG.svg" alt="ResearchGate">
   </a>
-
-  <!-- Scopus -->
   <a href="https://www.scopus.com/authid/detail.uri?authorId=57206849353" target="_blank" class="icon-link" title="Scopus">
     <img src="scopus.png" alt="Scopus">
   </a>
-
 </div>
 
 <style>
@@ -136,242 +135,140 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 45px; /* Increased spacing */
   margin-top: 30px;
-  flex-wrap: wrap;
 }
 
 .icon-link img {
   width: 42px;
   height: 42px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, filter 0.3s ease;
   border-radius: 8px;
+  filter: drop-shadow(1px 1px 4px rgba(0, 0, 0, 0.1));
 }
 
 .icon-link:hover img {
-  transform: scale(1.2) rotate(3deg);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
-
-.icon-link:active img {
-  transform: scale(0.95);
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transform: scale(1.15);
+  filter: drop-shadow(2px 2px 12px rgba(0, 123, 255, 0.3));
 }
 </style>
 
 
-
-
-<br><br>
-
-<div style="text-align: justify;">
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, results = 'asis', warning = FALSE, message = FALSE)
+library(dplyr)
+library(stringr)
+```
 
 ## 📚 Peer-reviewed Journal Publications
 
-<div class="timeline">
+```{r journal-publications}
+# Load journal publications
+papers <- read.csv("papers.csv", stringsAsFactors = FALSE)
 
-### <span class="year">2025</span>
+# Ensure Year is numeric and sorted
+papers <- papers %>% mutate(Year = as.numeric(Year)) %>% arrange(desc(Year))
 
-<div class="publication">
-<b>Reduced penetration of northern-sourced waters into the South Atlantic during the Last Interglacial relative to the Holocene</b><br>
-<span class="gray">Dias, B.B., Chiessi, C.M., Piotrowski, A.M., Campos, M.C.,</span> <span class="blue">Jena, P.S.</span><span class="gray">, Ballalai, J.M., Nascimento, R.A., Santos, T.P., Venancio, I.M., Mashayek, A., Albuquerque, A.L.S.</span><br>
-<i style="color:black;">Paleoceanography and Paleoclimatology</i><span class="gray"> <br>
-<span class="gray">DOI: <a href="https://doi.org/10.1029/2024PA004955">https://doi.org/10.1029/2024PA004955</a></span>
-</div>
+# Function to style authors
+style_authors <- function(authors) {
+  # Highlight your name in bold black
+  authors <- gsub("Jena, P\\.S\\.", "<span class='me'>Jena, P.S.</span>", authors)
+  
+  # Style all other authors in gray (skip 'me' span)
+  authors <- gsub("(?<!me'>)([A-Z][a-z]+,\\s[A-Z]\\.\\s?[A-Z]?\\.?)", "<span class='gray'>\\1</span>", authors, perl = TRUE)
+  
+  return(authors)
+}
+
+# Function to style isotopes in title
+style_title <- function(title) {
+  title <- gsub("\\b(\\d+)(Be|C|U)\\b", "<sup>\\1</sup>\\2", title)
+  return(title)
+}
+
+# Output grouped by year
+years <- unique(papers$Year)
+for (yr in years) {
+  cat(paste0("<div class='timeline'>\n\n### <span class='year'>", yr, "</span>\n\n"))
+  
+  subdf <- papers %>% filter(Year == yr)
+  for (i in 1:nrow(subdf)) {
+    title <- style_title(subdf$Title[i])  # keep this only
+    authors <- style_authors(subdf$Authors[i])
+    journal <- subdf$Journal[i]
+    volume <- subdf$Volume[i]
+    doi <- subdf$DOI[i]
+
+    cat("<div class='publication-box'>\n")
+    cat("<div class='publication'>\n")
+    cat(paste0("<b class='blue'>", title, "</b><br>\n"))
+    cat(paste0(authors, "<br>\n"))
+    cat(paste0("<i style='color:black;'>", journal, "</i><span class='gray'>, ", volume, "</span><br>\n"))
+    cat(paste0("<span class='gray'>DOI: <a href='", doi, "' target='_blank'>", doi, "</a></span>\n"))
+    cat("</div>\n</div>\n\n")
+  }
+  cat("</div>\n")
+}
 
 
-### <span class="year">2024</span>
 
-<div class="publication">
-<b>Spatial variability in residence time of Beryllium in the Indian Ocean</b><br>
-<span class="blue">Jena, P.S.</span>, <span class="gray">Bhushan, R., Jena, S.K., Ajay, S., Sudheer, A.K.</span><br>
-<i style="color:black;">Journal of Environmental Radioactivity</i><span class="gray">, 280, 107549</span><br>
-<span class="gray">DOI: <a href="https://doi.org/10.1016/J.JENVRAD.2024.107549">https://doi.org/10.1016/J.JENVRAD.2024.107549</a></span>
-</div>
-
-<div class="publication">
-<b>Centennial-millennial scale global climate-linked monsoonal and non-monsoonal changes in the eastern Arabian Sea during the last 42,800 years</b><br>
-<span class="gray">Ansari, M.A., Ansari, A.H., Mishra, R., Arif, M.,</span> <span class="blue">Jena, P.S.</span><span class="gray">, Dabhi, A., Bhushan, R., Singh, D.P., Maurya, A.S., Das, P.K., Rahi, I.C., Agrawal, S.</span><br>
-<i style="color:black;">Marine Geology</i><span class="gray">, 472, 107307</span><br>
-<span class="gray">DOI: <a href="https://doi.org/10.1016/J.MARGEO.2024.107307">https://doi.org/10.1016/J.MARGEO.2024.107307</a></span>
-</div>
-
-<div class="publication">
-<b>Climate, human settlement, and migration in South Asia from early historic to medieval period</b><br>
-<span class="gray">Sarkar, A., Sengupta, T., Ambekar, A., Bhushan, R., Dimri, A.P., Deshpande-Mukherjee, A., Sharma, A., Liang, M.C.,</span> <span class="blue">Jena, P.S.</span><span class="gray">, Chakraborty, A., Sanyal, P., Dabhi, A., Juyal, N.</span><br>
-<i style="color:black;">Quaternary Science Reviews</i></b><span class="gray">, 324, 108470</span><br>
-<span class="gray">DOI: <a href="https://doi.org/10.1016/J.QUASCIREV.2023.108470">https://doi.org/10.1016/J.QUASCIREV.2023.108470</a></span>
-</div>
-
-### <span class="year">2023</span>
-
-<div class="publication">
-<b>10Be exposure age dating of moraines and glacially polished bedrocks in Karakoram and Ladakh Ranges, NW Himalaya</b><br>
-<span class="blue">Jena, P.S.</span>, <span class="gray">Bhushan, R., Sharma, S., Dabhi, A.J., Shivam, A., Raj, H., Juyal, N.</span><br>
-<i style="color:black;">Journal of Geophysical Research: Earth Surface</i><span class="gray">, 128, e2023JF007216</span><br>
-<span class="gray">DOI: <a href="https://doi.org/10.1029/2023JF007216">https://doi.org/10.1029/2023JF007216</a></span>
-</div>
-
-<div class="publication">
-<b>Applicability of meteoric 10Be in dating marine sediment cores</b><br>
-<span class="blue">Jena, P.S.</span>, <span class="gray">Bhushan, R., Ajay, S., Dabhi, A.J., Gaddam, M., Sudheer, A.K.</span><br>
-<i style="color:black;">Marine Chemistry</i><span class="gray">, 104275</span><br>
-<span class="gray">DOI: <a href="https://doi.org/10.1016/J.MARCHEM.2023.104275">https://doi.org/10.1016/J.MARCHEM.2023.104275</a></span>
-</div>
-
-<div class="publication">
-<b>Holocene evolution of the Banni Plain at the North-East margin of the Arabian Sea</b><br>
-<span class="gray">Kumar, A., Maurya, D.M., Phartiyal, B., Arif, M., Khonde, N., Bhushan, R.,</span> <span class="blue">Jena, P.S.</span><span class="gray">, Dabhi, A., Chamyal, L.S.</span><br>
-<i style="color:black;">The Depositional Record</i><span class="gray">, 0–3</span><br>
-<span class="gray">DOI: <a href="https://doi.org/10.1002/dep2.241">https://doi.org/10.1002/dep2.241</a></span>
-</div>
-
-<div class="publication">
-<b>Spatial heterogeneity in beryllium isotopic distribution in the Indian Ocean</b><br>
-<span class="blue">Jena, P.S.</span>, <span class="gray">Bhushan, R., Ajay, S., Sudheer, A.K.</span><br>
-<i style="color:black;">Geochimica et Cosmochimica Acta</i><br>
-<span class="gray">DOI: <a href="https://doi.org/10.1016/J.GCA.2022.12.009">https://doi.org/10.1016/J.GCA.2022.12.009</a></span>
-</div>
-
-<div class="publication">
-<b>A 2600 year multi-proxy record for climate and vegetation reconstruction along the Mahanadi River delta</b><br>
-<span class="gray">Samal, P., Singarasubramanian, S.R., Srivastava, J., Kawsar, M., Manoj, M.C., Gurumurthy, G.P., Chauhan, M., Ali, S., Mahboob, A., Sharma, A.,</span> <span class="blue">Jena, P.S.</span><span class="gray">, Shivam, A., Bhushan, R.</span><br>
-<i style="color:black;">The Holocene</i><br>
-<span class="gray">DOI: <a href="https://doi.org/10.1177/09596836231163492">https://doi.org/10.1177/09596836231163492</a></span>
-</div>
-
-<div class="publication">
-<b>Coastal vegetation dynamics in response to climatic and relative sea level changes</b><br>
-<span class="gray">Samal, P., Singarasubramanian, S.R., Srivastava,</span> <span class="blue">Jena, P.S.</span><span class="gray">, Shivam, A., Bhushan, R.</span><br>
-<i style="color:black;">Palynology</i><br>
-<span class="gray">DOI: <a href="https://doi.org/10.1080/01916122.2022.2134937">https://doi.org/10.1080/01916122.2022.2134937</a></span>
-
-</div>
-
-### <span class="year">2022</span>
-
-<div class="publication">
-<b>Late Holocene wildfire record from the Stagmo peat section, Leh valley, NW Himalaya</b><br>
-<span class="gray">Sagwal, S., Sengupta, D., Kumar, A., Dutt, S., Srivastava, P., Agnihotri, R., Gahlaud, S.,</span> <span class="blue">Jena, P.S.</span><span class="gray">, Shivam, A., Bhushan, R.</span><br>
-<i style="color:black;">The Holocene</i><br>
-<span class="gray">DOI: <a href="https://doi.org/10.1177/09596836231157066">https://doi.org/10.1177/09596836231157066</a></span>
-</div>
-
-<div class="publication">
-<b>Seasonal variation of surface seawater radiocarbon in the Andaman Sea as recorded in coral</b><br>
-<span class="gray">Raj, H., Bhushan, R., Banerji, U.S.,</span> <span class="blue">Jena, P.S.</span><span class="gray">, Dabhi, A.J.</span><br>
-<i style="color:black;">Journal of Environmental Radioactivity</i><span class="gray">, 255, 107021</span><br>
-<span class="gray">DOI: <a href="https://doi.org/10.1016/J.JENVRAD.2022.107021">https://doi.org/10.1016/J.JENVRAD.2022.107021</a></span>
-</div>
-
-<div class="publication">
-<b>Relict proglacial lake of Spituk (Leh), northwest (NW) Himalaya: A repository of hydrological changes during Marine Isotopic Stage (MIS)-2</b><br>
-<span class="blue">Jena, P.S.</span><span class="gray">, Bhushan, R., Raj, H., Dabhi, A.J., Sharma, S., Shukla, A.D., Juyal, N.</span><br>
-<i style="color:black;">Palaeogeography, Palaeoclimatology, Palaeoecology</i><span class="gray">, 111164</span><br>
-<span class="gray">DOI: <a href="https://doi.org/10.1016/j.palaeo.2022.111164">https://doi.org/10.1016/j.palaeo.2022.111164</a></span>
-</div>
-
-<div class="publication">
-<b>Palaeoclimatic variability during last eight millennia from a morainal lake in Zanskar, northwest Himalaya</b><br>
-<span class="gray">Phartiyal, B., Ali, S.N., Sharma, A., Agrawal, S., Nag, D., Tiwari, P., Kumar, M., Morthekai, P., Govil, P., Thakur, B., Bhushan, R.,</span> <span class="blue">Jena, P.S.</span><span class="gray">, Shivam, A.</span><br>
-<i style="color:black;">Journal of Palaeosciences</i><span class="gray">, 71, 75–88</span>
-</div>
-
-<div class="publication">
-<b>New chronology for megalithic burials in Vidarbha (central India): insights into contemporary hydro-climate and food habits</b><br>
-<span class="gray">Patel, N., Trivedi, P., Agnihotri, R., Rai, N., Sathe, V., Khonde, N., Bhushan, R.,</span> <span class="blue">Jena, P.S.</span><span class="gray">, Shivam, A., Kumar, A.</span><br>
-<i style="color:black;">Radiocarbon</i><span class="gray">, 00, 1–17</span><br>
-<span class="gray">DOI: <a href="https://doi.org/10.1017/RDC.2022.47">https://doi.org/10.1017/RDC.2022.47</a></span>
-</div>
-
-<div class="publication">
-<b>Evidence of poorly ventilated deep Central Indian Ocean during the last glaciation</b><br>
-<span class="gray">Bharti, N., Bhushan, R., Skinner, L., Muruganantham, M.,</span> <span class="blue">Jena, P.S.</span><span class="gray">, Dabhi, A., Shivam, A.</span><br>
-<i style="color:black;">Earth and Planetary Science Letters</i><span class="gray">, 582, 117438</span><br>
-<span class="gray">DOI: <a href="https://doi.org/10.1016/J.EPSL.2022.117438">https://doi.org/10.1016/J.EPSL.2022.117438</a></span>
-</div>
-
-<div class="publication">
-<b>10Be depositional flux variation in the central Indian Ocean during the last 43 ka</b><br>
-<span class="blue">Jena, P.S.</span><span class="gray">, Bhushan, R., Ajay, S., Bharti, N., Sudheer, A.K.</span><br>
-<i style="color:black;">Science of The Total Environment</i><span class="gray">, 149808</span><br>
-<span class="gray">DOI: <a href="https://doi.org/10.1016/j.scitotenv.2021.149808">https://doi.org/10.1016/j.scitotenv.2021.149808</a></span>
-</div>
-
-### <span class="year">2021</span>
-
-<div class="publication">
-<b>Production rate variation and changes in sedimentation rate of marine core dated with meteoric 10Be and 14C</b><br>
-<span class="blue">Jena, P.S.</span><span class="gray">, Bhushan, R., Shivam, A., Nambiar, R., Bharti, N.</span><br>
-<i style="color:black;">Journal of Environmental Radioactivity</i><span class="gray">, 237, 106678</span><br>
-<span class="gray">DOI: <a href="https://doi.org/10.1016/j.jenvrad.2021.106678">https://doi.org/10.1016/j.jenvrad.2021.106678</a></span>
-</div>
-
-### <span class="year">2020</span>
-
-<div class="publication">
-<b>Holocene hydroclimatic variability in the Zanskar Valley, Northwestern Himalaya, India</b><br>
-<span class="gray">Ali, S.N., Agrawal, S., Sharma, A., Phartiyal, B., Morthekai, P., Govil, P., Bhushan, R., Farooqui, S.,</span> <span class="blue">Jena, P.S.</span><span class="gray">, Shivam, A.</span><br>
-<i style="color:black;">Quaternary Research</i><span class="gray">, 1–17</span><br>
-<span class="gray">DOI: <a href="https://doi.org/10.1017/qua.2020.22">https://doi.org/10.1017/qua.2020.22</a></span>
-</div>
-
-### <span class="year">2019</span>
-
-<div class="publication">
-<b>Spatio-temporal variations in ecosystem and CO₂ sequestration in coastal lagoon: A foraminiferal perspective</b><br>
-<span class="gray">Barik, S.S., Singh, R.K.,</span> <span class="blue">Jena, P.S.</span><span class="gray">, Tripathy, S., Sharma, K., Prusty, P.</span><br>
-<i style="color:black;">Marine Micropaleontology</i><br>
-<span class="gray">DOI: <a href="https://doi.org/10.1016/j.marmicro.2019.02.003">https://doi.org/10.1016/j.marmicro.2019.02.003</a></span>
-</div>
-
-</div>
+```
 
 ---
 
 ## 🎤 Conference Publications (International)
 
-<div class="timeline">
+```{r conference-publications}
+# Load conference publications
+conf <- read.csv("conference.csv", stringsAsFactors = FALSE)
 
-### <span class="year">2023</span>
+# Ensure Year is numeric and sorted descending
+conf <- conf %>% mutate(Year = as.numeric(Year)) %>% arrange(desc(Year))
 
-<div class="publication">
-<b>The Atlantic meridional overturning circulation during Heinrich Stadial 1</b><br>
-<span class="blue">Jena, P.S.</span><span class="gray">, Chiessi, C.M., Voigt, I., Mulitza, S.</span><br>
-<b><i>AGU Fall Meeting</i></b><span class="gray"> (OS43A-03)</span>
-</div>
+# Function to style isotopes in title (superscript numbers only)
+style_title <- function(title) {
+  # Matches digits + element symbol (e.g. 10Be, 14C, 238U)
+  title <- gsub("\\b(\\d+)(Be|C|U)\\b", "<sup>\\1</sup>\\2", title)
+  return(title)
+}
 
-### <span class="year">2022</span>
+# Function to style author names:
+# Highlight 'Jena, P.S.' in bold blue, others in gray
+style_authors <- function(authors) {
+  # Highlight your name in bold blue
+  authors <- gsub("Jena, P\\.S\\.", "<span class='blue'><b>Jena, P.S.</b></span>", authors)
+  
+  # Style all other author names in gray, ignoring already styled Jena
+  authors <- gsub("(?<!blue'><b>)([A-Z][a-z]+,\\s[A-Z]\\.\\s?[A-Z]?\\.?)", "<span class='gray'>\\1</span>", authors, perl = TRUE)
+  
+  return(authors)
+}
 
-<div class="publication">
-<b>Paleo Thermocline Ventilation and Upper Ocean Water Mass Evolution of the Equatorial Indian Ocean during the Last 44ka</b><br>
-<span class="gray">Jena, S.K., Bhushan, R., Bharti, N.,</span> <span class="blue">Jena, P.S.</span><br>
-<b><i>AGU Fall Meeting</i></b><span class="gray"> (PP15B-03)</span>
-</div>
+# Output publications grouped by year with styled titles and authors
+years_conf <- unique(conf$Year)
+for (yr in years_conf) {
+  cat(paste0("<div class='timeline'>\n\n### <span class='year'>", yr, "</span>\n\n"))
+  
+  subdf <- conf %>% filter(Year == yr)
+  
+  for (i in 1:nrow(subdf)) {
+    title <- style_title(subdf$Title[i])
+    authors <- style_authors(subdf$Authors[i])
+    journal <- subdf$Journal[i]
+    
+    cat("<div class='publication-box'>\n")
+    cat("<div class='publication'>\n")
+    cat(paste0("<b><span class='blue'>", title, "</span></b><br>\n"))
+    cat(paste0(authors, "<br>\n"))
+    cat(paste0("<i style='color:black;'>", journal, "</i>\n"))
+    cat("</div>\n</div>\n\n")
+  }
+  
+  cat("</div>\n")
+}
 
-### <span class="year">2021</span>
 
-<div class="publication">
-<b>10Be/9Be Ratio Variation in the Central Indian Ocean during the Last 43 ka; Implication to Past Geomagnetic Field Intensity Changes</b><br>
-<span class="blue">Jena, P.S.</span><span class="gray">, Bhushan, R., Ajay, S., Bharti, N., Sudheer, A.K.</span><br>
-<b><i>AGU Fall Meeting</i></b><span class="gray"> (GP43A-05)</span>
-</div>
-
-<div class="publication">
-<b>First Radiocarbon Evidence of Poorly Ventilated Deep Central Indian Ocean during the Last Glaciation</b><br>
-<span class="gray">Bharti, N., Bhushan, R., Skinner, L., Muruganantham, M.,</span> <span class="blue">Jena, P.S.</span><span class="gray">, Dabhi, A., Shivam, A.</span><br>
-<b><i>AGU Fall Meeting</i></b><span class="gray"> (OS21A-09)</span>
-</div>
-
-### <span class="year">2020</span>
-
-<div class="publication">
-<b>Seasonal freshwater flux to the Bengal basin during late Holocene solar minima events</b><br>
-<span class="gray">Ghosh, P., Banerjee, Y., Sarkar, A., Pathak, P., Bhushan, R.,</span> <span class="blue">Jena, P.S.</span><span class="gray">, Sen, P.K.</span><br>
-<b><i>AGU Fall Meeting</i></b><span class="gray"> (PP022-0010)</span>
-</div>
-
-</div>
+```
 
 <style>
 .timeline {
@@ -388,9 +285,21 @@ a:hover {
   display: inline-block;
   margin-top: 30px;
 }
+.publication-box {
+  background: linear-gradient(135deg, #ffffff, #e6f3ff);
+  padding: 10px 16px; /* reduced vertical padding */
+  border-radius: 14px;
+  margin: 12px 0;     /* reduced vertical margin */
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+.publication-box:hover {
+  transform: scale(1.01);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
+}
 .publication {
-  margin: 20px 0;
-  padding-left: 12px;
+  margin: 6px 0;     /* reduced space before/after publication content */
+  padding-left: 10px;
   border-left: 2px solid #007BFF;
 }
 .publication a {
@@ -406,4 +315,9 @@ a:hover {
   color: darkblue;
   font-weight: bold;
 }
+.me {
+  color: black !important;
+  font-weight: bold;
+}
 </style>
+

@@ -310,12 +310,11 @@ $(document).ready(function () {
 </div>
 
 
-<!-- Google Fonts & Typed.js -->
-<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+<!-- Typed.js -->
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 <style>
   body {
-    font-family: 'Fira Sans', sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     margin: 0;
     background-color: #ffffff;
     animation: bgColorShift 15s infinite alternate;
@@ -328,6 +327,30 @@ $(document).ready(function () {
     50%  { background-color: #eaf6ff; }
     75%  { background-color: #e3f2ff; }
     100% { background-color: #ffffff; }
+  }
+
+ @keyframes flyInRight {
+  0% { opacity: 0; transform: translateX(80px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+@keyframes flyInLeft {
+  0% { opacity: 0; transform: translateX(-80px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+@keyframes flyInTop {
+  0% { opacity: 0; transform: translateY(-80px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+@keyframes flyInBottom {
+  0% { opacity: 0; transform: translateY(80px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+
+  @keyframes sparkle {
+    0%   { opacity: 0; transform: scale(0.5) translateY(10px); }
+    30%  { opacity: 1; transform: scale(1.1) translateY(-2px); }
+    100% { opacity: 0; transform: scale(0.8) translateY(-15px); }
   }
 
   .hero {
@@ -350,23 +373,49 @@ $(document).ready(function () {
   }
 
   .hero-text h1 {
-    font-size: 36px;
+    font-size: 38px;
     margin: 0;
     background: linear-gradient(to right, #007acc, #003366);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-weight: 700;
   }
 
   .typed-role {
-    font-size: 18px;
+    font-size: 22px;
     color: darkgreen;
     margin: 8px 0 5px;
-    height: 22px;
+    height: 24px;
+    font-weight: 600;
   }
 
   .emoji-line {
-    font-size: 18px;
-    margin-top: 4px;
+    font-size: 24px;
+    margin-top: 10px;
+    height: 28px;
+    text-align: left;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+  }
+
+  .emoji-slide {
+    display: inline-block;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    position: relative;
+    transition: all 0.3s ease;
+    cursor: default;
+  }
+
+  .emoji-slide:hover::after {
+    content: "✨";
+    position: absolute;
+    top: -20px;
+    right: -10px;
+    font-size: 16px;
+    animation: sparkle 1.2s ease-out;
+    pointer-events: none;
   }
 
   .hero img {
@@ -383,14 +432,16 @@ $(document).ready(function () {
   .about-box {
     border: 2px solid #007acc;
     border-radius: 10px;
-    padding: 18px 25px;
+    padding: 20px 28px;
     background-color: #ffffffcc;
-    margin: 30px auto 40px;
+    margin: 5px auto 30px;
     max-width: 900px;
     text-align: justify;
-    font-size: 15.5px;
-    text-indent: 35px;
+    font-size: 15.4px;
+    line-height: 1.6;
+    font-weight: 400;
     box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.04);
+    text-indent: 30px;
   }
 
   .section-title {
@@ -437,7 +488,7 @@ $(document).ready(function () {
 </style>
 <!-- 🧑 Hero Section -->
 <div class="hero">
-<p><img src="solo1.jpg" alt="Partha Sarathi Jena"></p>
+<img src="solo1.jpg" alt="Partha Sarathi Jena">
 <div class="hero-text">
 <h1>
 <b>PARTHA SARATHI JENA</b>
@@ -445,11 +496,12 @@ $(document).ready(function () {
 <div class="typed-role">
 <span id="typed"></span>
 </div>
-<div class="emoji-line">
-🌍 📚 🎓 ⛰️ 🧪 📷 🛰️
+<div id="emoji-container" class="emoji-line">
+
 </div>
 </div>
 </div>
+<!-- Typed.js Role Animation -->
 <script>
   var typed = new Typed('#typed', {
     strings: [
@@ -465,27 +517,49 @@ $(document).ready(function () {
     loop: true
   });
 </script>
+<!-- Emoji Fly-In Animation -->
+<script>
+  const emojis = ["🌍", "📚", "🎓", "⛰️", "📊", "📷", "✈️", "🎥️", "🛰️","🎞️","🏞️"];
+  const emojiContainer = document.getElementById("emoji-container");
+  const directions = ["flyInRight", "flyInLeft", "flyInTop", "flyInBottom"];
+  let directionIndex = 0;
+
+  function playEmojiSequence() {
+    emojiContainer.innerHTML = "";
+    let index = 0;
+
+    // Animate each emoji one by one
+    const interval = setInterval(() => {
+      if (index < emojis.length) {
+        const emojiSpan = document.createElement("span");
+        emojiSpan.classList.add("emoji-slide");
+
+        const direction = directions[(directionIndex + index) % directions.length];
+        emojiSpan.style.animation = `${direction} 1s ease-out ${index * 0.3}s forwards`;
+
+        emojiSpan.textContent = emojis[index];
+        emojiContainer.appendChild(emojiSpan);
+        index++;
+      } else {
+        clearInterval(interval);
+
+        // ✅ Wait for all animations to finish + 3s pause WITH emojis visible
+        const totalWait = (emojis.length * 300) + 1000 + 3000; // animation time + hold
+        setTimeout(() => {
+          emojiContainer.innerHTML = "";  // Clear only after delay
+          directionIndex = (directionIndex + 1) % directions.length;
+          playEmojiSequence();
+        }, totalWait);
+      }
+    }, 300);
+  }
+
+  playEmojiSequence();
+</script>
 <p><a href="contact.html" class="contact-float">💬 Contact Me</a></p>
 <hr />
-<h3 style="margin-bottom: 8px;">
-📌 About Me
-</h3>
-<style>
-  .about-box {
-    border: 2px solid #007acc;
-    border-radius: 10px;
-    padding: 20px 28px;
-    background-color: #ffffffcc;
-    margin: 5px auto 30px;  /* Reduced space above and below the box */
-    max-width: 900px;
-    text-align: justify;
-    font-family: 'Helvetica', Helvetica, sans-serif;
-    font-size: 14.2px;
-    line-height: 1.6;
-    font-weight: 400;
-    box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.04);
-  }
-</style>
+<div id="about-me" class="section level2">
+<h2>📌 About Me</h2>
 <div class="about-box">
 <p>
 I am a researcher, specializing in (paleo)climate studies, with a focus
@@ -516,6 +590,7 @@ Built with ❤️ and a pinch of
 Thanks for visiting! Drop me a note — even a small message can mean a
 lot.
 </p>
+</div>
 </div>
 
 
