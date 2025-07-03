@@ -310,181 +310,446 @@ $(document).ready(function () {
 
 
 <p><br><br><br></p>
-<div style="text-align:center; margin-top:20px;">
-<p><a href="https://scholar.google.co.in/citations?user=mi1fxyEAAAAJ&hl=en" target="_blank" 
-     style="font-size:18px; padding:10px 20px; background-color:#4285F4; color:white; text-decoration:none; border-radius:8px;">
-📖 View My Google Scholar Profile </a></p>
-</div>
-<div style="text-align:center; margin-top:20px;">
-<p>Total Citations: 131; h-index: 7; i10-index: 4</p>
-</div>
+<div id="research-profile" class="section level2">
+<h2>📖 Research Profile</h2>
+<div style="text-align:center; margin-top: 20px;">
 <div
-style="display: flex; justify-content: center; align-items: center; gap: 30px; margin-top: 20px;">
+style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 20px;">
+<div class="metric-box"
+title="Total number of journal and conference publications">
+<div class="metric-icon">
+📚
+</div>
+<div class="metric-label">
+Publications
+</div>
+<div class="metric-value">
+20
+</div>
+</div>
+<div class="metric-box"
+title="Total number of times your publications were cited">
+<div class="metric-icon">
+📊
+</div>
+<div class="metric-label">
+Citations
+</div>
+<div class="metric-value">
+131
+</div>
+</div>
+<div class="metric-box"
+title="Number of publications with at least 7 citations">
+<div class="metric-icon">
+📈
+</div>
+<div class="metric-label">
+h-index
+</div>
+<div class="metric-value">
+7
+</div>
+</div>
+<div class="metric-box"
+title="Number of publications with at least 10 citations">
+<div class="metric-icon">
+🔍
+</div>
+<div class="metric-label">
+i10-index
+</div>
+<div class="metric-value">
+4
+</div>
+</div>
+</div>
+</div>
+<style>
+.metric-box {
+  background: #ffffff;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  width: 120px;
+  padding: 10px 5px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.05);
+}
+.metric-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 4px 4px 15px rgba(0,0,0,0.1);
+}
+.metric-icon {
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+.metric-label {
+  font-size: 14px;
+  color: #555;
+}
+.metric-value {
+  font-size: 20px;
+  font-weight: bold;
+  color: #007BFF;
+}
+</style>
+<div style="text-align: center; margin: 20px 0;">
+<p><a href="https://scholar.google.co.in/citations?user=mi1fxyEAAAAJ&hl=en" target="_blank"
+     style="font-size: 18px; font-weight: bold; color: #1a0dab; text-decoration: none;
+            border: 2px solid #1a0dab; padding: 10px 20px; border-radius: 8px;
+            display: inline-block; transition: all 0.3s ease;"> 🔗 Visit
+My Google Scholar Profile </a></p>
+</div>
+<style>
+a:hover {
+  background-color: #1a0dab;
+  color: white !important;
+}
+</style>
+<div class="icon-row">
 <p><!-- ORCID -->
-<a href="https://orcid.org/ 0000-0002-2232-4212" target="_blank" style="margin: 0 15px;">
-<img src="https://upload.wikimedia.org/wikipedia/commons/0/06/ORCID_iD.svg" alt="ORCID" width="40">
+<a href="https://orcid.org/0000-0002-2232-4212" target="_blank" class="icon-link" title="ORCID">
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/06/ORCID_iD.svg" alt="ORCID">
 </a></p>
 <p><!-- ResearchGate -->
-<a href="https://www.researchgate.net/profile/Partha-Jena?ev=hdr_xprf" target="_blank" style="margin: 0 15px;">
-<img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/ResearchGate_icon_SVG.svg" alt="ResearchGate" width="40">
+<a href="https://www.researchgate.net/profile/Partha-Jena?ev=hdr_xprf" target="_blank" class="icon-link" title="ResearchGate">
+<img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/ResearchGate_icon_SVG.svg" alt="ResearchGate">
 </a></p>
 <p><!-- Scopus -->
-<a href="https://www.scopus.com/authid/detail.uri?authorId=57206849353" target="_blank" style="margin: 0 15px;">
-<img src="scopus.png" alt="Scopus" width="40"> </a></p>
+<a href="https://www.scopus.com/authid/detail.uri?authorId=57206849353" target="_blank" class="icon-link" title="Scopus">
+<img src="scopus.png" alt="Scopus"> </a></p>
 </div>
+<style>
+.icon-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.icon-link img {
+  width: 42px;
+  height: 42px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 8px;
+}
+
+.icon-link:hover img {
+  transform: scale(1.2) rotate(3deg);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.icon-link:active img {
+  transform: scale(0.95);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+</style>
 <p><br><br></p>
-<div id="publication-list" class="section level2"
-style="text-align: justify;">
-<h2>Publication list</h2>
-<ol style="list-style-type: decimal">
-<li>Dias, B.B., Chiessi, C.M., Piotrowski, A.M., Campos, M.C.,
-<strong>Jena, P.S.</strong>, Ballalai, J.M., Nascimento, R.A., Santos,
-T.P., Venancio, I.M., Mashayek, A., Albuquerque, A.L.S., 2025. Reduced
-penetration of northern-sourced waters into the South Atlantic during
-the Last Interglacial relative to the Holocene. Paleoceanography and
-Paleoclimatology. <a href="https://doi.org/10.1029/2024PA004955"
-class="uri">https://doi.org/10.1029/2024PA004955</a>.</li>
-<li><strong>Jena, P.S.</strong>, Bhushan, R., Jena, S.K., Ajay, S.,
-Sudheer, A.K., 2024. Spatial variability in residence time of Beryllium
-in the Indian Ocean. Journal of Environmental Radioactivity. 280,
-107549. <a href="https://doi.org/10.1016/J.JENVRAD.2024.107549"
-class="uri">https://doi.org/10.1016/J.JENVRAD.2024.107549</a>.</li>
-<li>Ansari, M.A., Ansari, A.H., Mishra, R., Arif, M., <strong>Jena,
-P.S.</strong>, Dabhi, A., Bhushan, R., Singh, D.P., Maurya, A.S., Das,
-P.K., Rahi, I.C., Agrawal, S., 2024. Centennial-millennial scale global
-climate-linked monsoonal and non-monsoonal changes in the eastern
-Arabian Sea during the last 42,800 years. Mar. Geol. 472, 107307. <a
-href="https://doi.org/10.1016/J.MARGEO.2024.107307"
-class="uri">https://doi.org/10.1016/J.MARGEO.2024.107307</a></li>
-<li>Sarkar, A., Sengupta, T., Ambekar, A., Bhushan, R., Dimri, A.P.,
-Deshpande-Mukherjee, A., Sharma, A., Liang, M.C., <strong>Jena,
-P.S.</strong>, Chakraborty, A., Sanyal, P., Dabhi, A., Juyal, N., 2024.
-Climate, human settlement, and migration in South Asia from early
-historic to medieval period: Evidence from new archaeological excavation
-at Vadnagar, Western India. Quaternary Science Reviews. 324, 108470. <a
-href="https://doi.org/10.1016/J.QUASCIREV.2023.108470"
-class="uri">https://doi.org/10.1016/J.QUASCIREV.2023.108470</a></li>
-<li><strong>Jena, P.S.</strong>, Bhushan, R., Sharma, S., Dabhi, A.J.,
-Shivam, A., Raj, H., Juyal, N., 2023. 10Be exposure age dating of
-moraines and glacially polished bedrocks in Karakoram and Ladakh Ranges,
-NW Himalaya: Implications and limitations in Quaternary glaciation
-studies. Journal of Geophysical Research: Earth Surface. 128,
-e2023JF007216. <a href="https://doi.org/10.1029/2023JF007216"
-class="uri">https://doi.org/10.1029/2023JF007216</a></li>
-<li><strong>Jena, P.S.</strong>, Bhushan, R., Ajay, S., Dabhi, A.J.,
-Gaddam, M., Sudheer, A.K., 2023. Applicability of meteoric 10Be in
-dating marine sediment cores. Marine Chemistry. 104275. <a
-href="https://doi.org/10.1016/J.MARCHEM.2023.104275"
-class="uri">https://doi.org/10.1016/J.MARCHEM.2023.104275</a></li>
-<li>Kumar, A., Maurya, D.M., Phartiyal, B., Arif, M., Khonde, N.,
-Bhushan, R., Jena, P.S., Dabhi, A., Chamyal, L.S., 2023. Holocene
-evolution of the Banni Plain at the North-East margin of the Arabian
-Sea: constraints from a ca 50 m long sediment core. The Depositional
-Record. 0–3. <a href="https://doi.org/10.1002/dep2.241"
-class="uri">https://doi.org/10.1002/dep2.241</a></li>
-<li><strong>Jena, P.S.</strong>, Bhushan, R., Ajay, S., Sudheer, A.,
-2023. Spatial heterogeneity in beryllium isotopic distribution in the
-Indian Ocean. Geochimica et Cosmochimica Acta. <a
-href="https://doi.org/10.1016/J.GCA.2022.12.009"
-class="uri">https://doi.org/10.1016/J.GCA.2022.12.009</a></li>
-<li>Sagwal, S., Sengupta, D., Kumar, A., Dutt, S., Srivastava, P.,
-Agnihotri, R., Gahlaud, S., Jena, P.S., Shivam, A., Bhushan, R., 2022.
-Late Holocene wildfire record from the Stagmo peat section, Leh valley,
-NW Himalaya. The Holocene. <a
-href="https://doi.org/10.1177/09596836231157066"
-class="uri">https://doi.org/10.1177/09596836231157066</a></li>
-<li>Samal, P., Singarasubramanian, S. R., Srivastava, J., Kawsar, M.,
-Manoj, M.C., Gurumurthy, G.P., Chauhan, M., Ali, S., Mahboob, A.,
-Sharma, A., <strong>Jena, P.S.</strong>, Shivam, A., Bhushan, R. 2023. A
-2600 year -multi-proxy record for climate and vegetation reconstruction
-along the Mahanadi River delta, East coast of India. The Holocene. <a
-href="https://doi.org/10.1177/09596836231163492"
-class="uri">https://doi.org/10.1177/09596836231163492</a></li>
-<li>Samal, P., Singarasubramanian, S. R., Srivastava, <strong>Jena,
-P.S.</strong>, Shivam, A., Bhushan, R. 2023. Coastal vegetation dynamics
-in response to climatic and relative sea level changes in Mahanadi River
-delta, NE coast of India. Palynology. <a
-href="https://doi.org/10.1080/01916122.2022.2134937"
-class="uri">https://doi.org/10.1080/01916122.2022.2134937</a></li>
-<li>Raj, H., Bhushan, R., Banerji, U.S., <strong>Jena, P.S.</strong>,
-Dabhi, A.J., 2022. Seasonal variation of surface seawater radiocarbon in
-the Andaman Sea as recorded in coral. Journal of Environmental
-Radioactivity. 255, 107021. <a
-href="https://doi.org/10.1016/J.JENVRAD.2022.107021"
-class="uri">https://doi.org/10.1016/J.JENVRAD.2022.107021</a></li>
-<li><strong>Jena, P.S.</strong>, Bhushan, R., Raj, H., Dabhi, A.J.,
-Sharma, S., Shukla, A.D., Juyal, N., 2022. Relict proglacial lake of
-Spituk (Leh), northwest (NW) Himalaya: A repository of hydrological
-changes during Marine Isotopic Stage (MIS)-2. Palaeogeography,
-Palaeoclimatology, Palaeoecology. 111164. <a
-href="https://doi.org/10.1016/j.palaeo.2022.111164"
-class="uri">https://doi.org/10.1016/j.palaeo.2022.111164</a></li>
-<li>Phartiyal, B., Ali, S.N., Sharma, A., Agrawal, S., Nag, D., Tiwari,
-P., Kumar, M., Morthekai, P., Govil, P., Thakur, B., Bhushan, R.,
-<strong>Jena, P.S.</strong>, Shivam, A., 2022. Palaeoclimatic
-variability during last eight millennia from a morainal lake in Zanskar,
-northwest Himalaya. Journal of Palaeosciences 71, 75–88.</li>
-<li>Patel, N., Trivedi, P., Agnihotri, R., Rai, N., Sathe, V., Khonde,
-N., Bhushan, R., <strong>Jena, P.S.</strong>, Shivam, A., Kumar, A.,
-2022. New chronology for megalithic burials in Vidarbha (central India):
-insights into contemporary hydro-climate and food habits. Radiocarbon
-00, 1–17. <a href="https://doi.org/10.1017/RDC.2022.47"
-class="uri">https://doi.org/10.1017/RDC.2022.47</a></li>
-<li>Bharti, N., Bhushan, R., Skinner, L., Muruganantham, M.,
-<strong>Jena, P.S.</strong>, Dabhi, A., Shivam, A., 2022. Evidence of
-poorly ventilated deep Central Indian Ocean during the last glaciation.
-Earth and Planetary Science Letters. 582, 117438. <a
-href="https://doi.org/10.1016/J.EPSL.2022.117438"
-class="uri">https://doi.org/10.1016/J.EPSL.2022.117438</a></li>
-<li><strong>Jena, P.S.</strong>, Bhushan, R., Ajay, S., Bharti, N.,
-Sudheer, A.K., 2022. 10Be depositional flux variation in the central
-Indian Ocean during the last 43 ka. Science of The Total Environment.
-149808. <a href="https://doi.org/10.1016/j.scitotenv.2021.149808"
-class="uri">https://doi.org/10.1016/j.scitotenv.2021.149808</a><br />
-</li>
-<li><strong>Jena, P.S.</strong>, Bhushan, R., Shivam, A., Nambiar, R.,
-Bharti, N., 2021. Production rate variation and changes in sedimentation
-rate of marine core dated with meteoric 10Be and 14C. Journal of
-Environmental Radioactivity. 237, 106678. <a
-href="https://doi.org/10.1016/j.jenvrad.2021.106678"
-class="uri">https://doi.org/10.1016/j.jenvrad.2021.106678</a>.</li>
-<li>Ali, S.N., Agrawal, S., Sharma, A., Phartiyal, B., Morthekai, P.,
-Govil, P., Bhushan, R., Farooqui, S., <strong>Jena, P.S.</strong>,
-Shivam, A., 2020. Holocene hydroclimatic variability in the Zanskar
-Valley, Northwestern Himalaya, India. Quaternary Research. 1–17. <a
-href="https://doi.org/10.1017/qua.2020.22"
-class="uri">https://doi.org/10.1017/qua.2020.22</a></li>
-<li>Barik, S.S., Singh, R.K., <strong>Jena, P.S.</strong>, Tripathy, S.,
-Sharma, K., Prusty, P., 2019. Spatio-temporal variations in ecosystem
-and CO2 sequestration in coastal lagoon: A foraminiferal perspective.
-Marine Micropaleontology. <a
-href="https://doi.org/10.1016/j.marmicro.2019.02.003"
-class="uri">https://doi.org/10.1016/j.marmicro.2019.02.003</a></li>
-</ol>
-<p>Conference Publications (international)</p>
-<ol style="list-style-type: decimal">
-<li><strong>Jena, P.S.</strong>, Chiessi, C.M., Voigt, I., Mulitza, S.,
-2023. The Atlantic meridional overturning circulation during Heinrich
-Stadial 1. AGU Fall meeting (OS43A-03).</li>
-<li><strong>Jena, P.S.</strong>, Bhushan, R., Ajay, S., Bharti, N.,
-Sudheer, A.K., 2021. 10Be/9Be Ratio Variation in the Central Indian
-Ocean during the Last 43 ka; Implication to Past Geomagnetic Field
-Intensity Changes. AGU Fall meeting (GP43A-05).</li>
-<li>Bharti, N., Bhushan, R., Skinner, L., Muruganantham, M.,
-<strong>Jena, P.S.</strong>, Dabhi, A., Shivam, A., 2021. First
-Radiocarbon Evidence of Poorly Ventilated Deep Central Indian Ocean
-during the Last Glaciation: Implication to Glacial Carbon Sequestration
-and Atmospheric CO2. AGU Fall meeting (OS21A-09).</li>
-<li>Ghosh, P., Banerjee, Y., Sarkar, A., Pathak, P., Bhushan, R.,
-<strong>Jena, P.S.</strong>, Sen, P.K., 2020. Similar magnitude of
-seasonal freshwater flux to the Bengal basin during late Holocene solar
-minima events revealed from the carbonate clumped isotope compositions
-of growth bands of fossil molluscs. AGU Fall meeting (PP022-0010).</li>
-<li>Jena, S.K., Bhushan, R., Bharti, N., <strong>Jena, P.S.</strong>,
-2022. Paleo Thermocline Ventilation and Upper Ocean Water Mass Evolution
-of the Equatorial Indian Ocean during the Last 44ka. AGU Fall meeting
-(PP15B-03)</li>
-</ol>
+</div>
+<div style="text-align: justify;">
+<div id="peer-reviewed-journal-publications" class="section level2">
+<h2>📚 Peer-reviewed Journal Publications</h2>
+<div class="timeline">
+<div id="section" class="section level3">
+<h3><span class="year">2025</span></h3>
+<div class="publication">
+<p><b>Reduced penetration of northern-sourced waters into the South
+Atlantic during the Last Interglacial relative to the Holocene</b><br>
+<span class="gray">Dias, B.B., Chiessi, C.M., Piotrowski, A.M., Campos,
+M.C.,</span> <span class="blue">Jena, P.S.</span><span class="gray">,
+Ballalai, J.M., Nascimento, R.A., Santos, T.P., Venancio, I.M.,
+Mashayek, A., Albuquerque, A.L.S.</span><br>
+<i style="color:black;">Paleoceanography and
+Paleoclimatology</i><span class="gray"> <br> <span class="gray">DOI:
+<a href="https://doi.org/10.1029/2024PA004955">https://doi.org/10.1029/2024PA004955</a></span></p>
+</div>
+</div>
+<div id="section-1" class="section level3">
+<h3><span class="year">2024</span></h3>
+<div class="publication">
+<p><b>Spatial variability in residence time of Beryllium in the Indian
+Ocean</b><br> <span class="blue">Jena, P.S.</span>, <span
+class="gray">Bhushan, R., Jena, S.K., Ajay, S., Sudheer, A.K.</span><br>
+<i style="color:black;">Journal of Environmental Radioactivity</i><span
+class="gray">, 280, 107549</span><br> <span class="gray">DOI:
+<a href="https://doi.org/10.1016/J.JENVRAD.2024.107549">https://doi.org/10.1016/J.JENVRAD.2024.107549</a></span></p>
+</div>
+<div class="publication">
+<p><b>Centennial-millennial scale global climate-linked monsoonal and
+non-monsoonal changes in the eastern Arabian Sea during the last 42,800
+years</b><br> <span class="gray">Ansari, M.A., Ansari, A.H., Mishra, R.,
+Arif, M.,</span> <span class="blue">Jena, P.S.</span><span
+class="gray">, Dabhi, A., Bhushan, R., Singh, D.P., Maurya, A.S., Das,
+P.K., Rahi, I.C., Agrawal, S.</span><br> <i style="color:black;">Marine
+Geology</i><span class="gray">, 472, 107307</span><br> <span
+class="gray">DOI:
+<a href="https://doi.org/10.1016/J.MARGEO.2024.107307">https://doi.org/10.1016/J.MARGEO.2024.107307</a></span></p>
+</div>
+<div class="publication">
+<p><b>Climate, human settlement, and migration in South Asia from early
+historic to medieval period</b><br> <span class="gray">Sarkar, A.,
+Sengupta, T., Ambekar, A., Bhushan, R., Dimri, A.P.,
+Deshpande-Mukherjee, A., Sharma, A., Liang, M.C.,</span> <span
+class="blue">Jena, P.S.</span><span class="gray">, Chakraborty, A.,
+Sanyal, P., Dabhi, A., Juyal, N.</span><br>
+<i style="color:black;">Quaternary Science Reviews</i></b><span
+class="gray">, 324, 108470</span><br> <span class="gray">DOI:
+<a href="https://doi.org/10.1016/J.QUASCIREV.2023.108470">https://doi.org/10.1016/J.QUASCIREV.2023.108470</a></span></p>
+</div>
+</div>
+<div id="section-2" class="section level3">
+<h3><span class="year">2023</span></h3>
+<div class="publication">
+<p><b>10Be exposure age dating of moraines and glacially polished
+bedrocks in Karakoram and Ladakh Ranges, NW Himalaya</b><br> <span
+class="blue">Jena, P.S.</span>, <span class="gray">Bhushan, R., Sharma,
+S., Dabhi, A.J., Shivam, A., Raj, H., Juyal, N.</span><br>
+<i style="color:black;">Journal of Geophysical Research: Earth
+Surface</i><span class="gray">, 128, e2023JF007216</span><br> <span
+class="gray">DOI:
+<a href="https://doi.org/10.1029/2023JF007216">https://doi.org/10.1029/2023JF007216</a></span></p>
+</div>
+<div class="publication">
+<p><b>Applicability of meteoric 10Be in dating marine sediment
+cores</b><br> <span class="blue">Jena, P.S.</span>, <span
+class="gray">Bhushan, R., Ajay, S., Dabhi, A.J., Gaddam, M., Sudheer,
+A.K.</span><br> <i style="color:black;">Marine Chemistry</i><span
+class="gray">, 104275</span><br> <span class="gray">DOI:
+<a href="https://doi.org/10.1016/J.MARCHEM.2023.104275">https://doi.org/10.1016/J.MARCHEM.2023.104275</a></span></p>
+</div>
+<div class="publication">
+<p><b>Holocene evolution of the Banni Plain at the North-East margin of
+the Arabian Sea</b><br> <span class="gray">Kumar, A., Maurya, D.M.,
+Phartiyal, B., Arif, M., Khonde, N., Bhushan, R.,</span> <span
+class="blue">Jena, P.S.</span><span class="gray">, Dabhi, A., Chamyal,
+L.S.</span><br> <i style="color:black;">The Depositional Record</i><span
+class="gray">, 0–3</span><br> <span class="gray">DOI:
+<a href="https://doi.org/10.1002/dep2.241">https://doi.org/10.1002/dep2.241</a></span></p>
+</div>
+<div class="publication">
+<p><b>Spatial heterogeneity in beryllium isotopic distribution in the
+Indian Ocean</b><br> <span class="blue">Jena, P.S.</span>, <span
+class="gray">Bhushan, R., Ajay, S., Sudheer, A.K.</span><br>
+<i style="color:black;">Geochimica et Cosmochimica Acta</i><br> <span
+class="gray">DOI:
+<a href="https://doi.org/10.1016/J.GCA.2022.12.009">https://doi.org/10.1016/J.GCA.2022.12.009</a></span></p>
+</div>
+<div class="publication">
+<p><b>A 2600 year multi-proxy record for climate and vegetation
+reconstruction along the Mahanadi River delta</b><br> <span
+class="gray">Samal, P., Singarasubramanian, S.R., Srivastava, J.,
+Kawsar, M., Manoj, M.C., Gurumurthy, G.P., Chauhan, M., Ali, S.,
+Mahboob, A., Sharma, A.,</span> <span class="blue">Jena,
+P.S.</span><span class="gray">, Shivam, A., Bhushan, R.</span><br>
+<i style="color:black;">The Holocene</i><br> <span class="gray">DOI:
+<a href="https://doi.org/10.1177/09596836231163492">https://doi.org/10.1177/09596836231163492</a></span></p>
+</div>
+<div class="publication">
+<p><b>Coastal vegetation dynamics in response to climatic and relative
+sea level changes</b><br> <span class="gray">Samal, P.,
+Singarasubramanian, S.R., Srivastava,</span> <span class="blue">Jena,
+P.S.</span><span class="gray">, Shivam, A., Bhushan, R.</span><br>
+<i style="color:black;">Palynology</i><br> <span class="gray">DOI:
+<a href="https://doi.org/10.1080/01916122.2022.2134937">https://doi.org/10.1080/01916122.2022.2134937</a></span></p>
+</div>
+</div>
+<div id="section-3" class="section level3">
+<h3><span class="year">2022</span></h3>
+<div class="publication">
+<p><b>Late Holocene wildfire record from the Stagmo peat section, Leh
+valley, NW Himalaya</b><br> <span class="gray">Sagwal, S., Sengupta, D.,
+Kumar, A., Dutt, S., Srivastava, P., Agnihotri, R., Gahlaud, S.,</span>
+<span class="blue">Jena, P.S.</span><span class="gray">, Shivam, A.,
+Bhushan, R.</span><br> <i style="color:black;">The Holocene</i><br>
+<span class="gray">DOI:
+<a href="https://doi.org/10.1177/09596836231157066">https://doi.org/10.1177/09596836231157066</a></span></p>
+</div>
+<div class="publication">
+<p><b>Seasonal variation of surface seawater radiocarbon in the Andaman
+Sea as recorded in coral</b><br> <span class="gray">Raj, H., Bhushan,
+R., Banerji, U.S.,</span> <span class="blue">Jena, P.S.</span><span
+class="gray">, Dabhi, A.J.</span><br> <i style="color:black;">Journal of
+Environmental Radioactivity</i><span class="gray">, 255,
+107021</span><br> <span class="gray">DOI:
+<a href="https://doi.org/10.1016/J.JENVRAD.2022.107021">https://doi.org/10.1016/J.JENVRAD.2022.107021</a></span></p>
+</div>
+<div class="publication">
+<p><b>Relict proglacial lake of Spituk (Leh), northwest (NW) Himalaya: A
+repository of hydrological changes during Marine Isotopic Stage
+(MIS)-2</b><br> <span class="blue">Jena, P.S.</span><span class="gray">,
+Bhushan, R., Raj, H., Dabhi, A.J., Sharma, S., Shukla, A.D., Juyal,
+N.</span><br> <i style="color:black;">Palaeogeography,
+Palaeoclimatology, Palaeoecology</i><span class="gray">,
+111164</span><br> <span class="gray">DOI:
+<a href="https://doi.org/10.1016/j.palaeo.2022.111164">https://doi.org/10.1016/j.palaeo.2022.111164</a></span></p>
+</div>
+<div class="publication">
+<p><b>Palaeoclimatic variability during last eight millennia from a
+morainal lake in Zanskar, northwest Himalaya</b><br> <span
+class="gray">Phartiyal, B., Ali, S.N., Sharma, A., Agrawal, S., Nag, D.,
+Tiwari, P., Kumar, M., Morthekai, P., Govil, P., Thakur, B., Bhushan,
+R.,</span> <span class="blue">Jena, P.S.</span><span class="gray">,
+Shivam, A.</span><br> <i style="color:black;">Journal of
+Palaeosciences</i><span class="gray">, 71, 75–88</span></p>
+</div>
+<div class="publication">
+<p><b>New chronology for megalithic burials in Vidarbha (central India):
+insights into contemporary hydro-climate and food habits</b><br> <span
+class="gray">Patel, N., Trivedi, P., Agnihotri, R., Rai, N., Sathe, V.,
+Khonde, N., Bhushan, R.,</span> <span class="blue">Jena,
+P.S.</span><span class="gray">, Shivam, A., Kumar, A.</span><br>
+<i style="color:black;">Radiocarbon</i><span class="gray">, 00,
+1–17</span><br> <span class="gray">DOI:
+<a href="https://doi.org/10.1017/RDC.2022.47">https://doi.org/10.1017/RDC.2022.47</a></span></p>
+</div>
+<div class="publication">
+<p><b>Evidence of poorly ventilated deep Central Indian Ocean during the
+last glaciation</b><br> <span class="gray">Bharti, N., Bhushan, R.,
+Skinner, L., Muruganantham, M.,</span> <span class="blue">Jena,
+P.S.</span><span class="gray">, Dabhi, A., Shivam, A.</span><br>
+<i style="color:black;">Earth and Planetary Science Letters</i><span
+class="gray">, 582, 117438</span><br> <span class="gray">DOI:
+<a href="https://doi.org/10.1016/J.EPSL.2022.117438">https://doi.org/10.1016/J.EPSL.2022.117438</a></span></p>
+</div>
+<div class="publication">
+<p><b>10Be depositional flux variation in the central Indian Ocean
+during the last 43 ka</b><br> <span class="blue">Jena, P.S.</span><span
+class="gray">, Bhushan, R., Ajay, S., Bharti, N., Sudheer,
+A.K.</span><br> <i style="color:black;">Science of The Total
+Environment</i><span class="gray">, 149808</span><br> <span
+class="gray">DOI:
+<a href="https://doi.org/10.1016/j.scitotenv.2021.149808">https://doi.org/10.1016/j.scitotenv.2021.149808</a></span></p>
+</div>
+</div>
+<div id="section-4" class="section level3">
+<h3><span class="year">2021</span></h3>
+<div class="publication">
+<p><b>Production rate variation and changes in sedimentation rate of
+marine core dated with meteoric 10Be and 14C</b><br> <span
+class="blue">Jena, P.S.</span><span class="gray">, Bhushan, R., Shivam,
+A., Nambiar, R., Bharti, N.</span><br> <i style="color:black;">Journal
+of Environmental Radioactivity</i><span class="gray">, 237,
+106678</span><br> <span class="gray">DOI:
+<a href="https://doi.org/10.1016/j.jenvrad.2021.106678">https://doi.org/10.1016/j.jenvrad.2021.106678</a></span></p>
+</div>
+</div>
+<div id="section-5" class="section level3">
+<h3><span class="year">2020</span></h3>
+<div class="publication">
+<p><b>Holocene hydroclimatic variability in the Zanskar Valley,
+Northwestern Himalaya, India</b><br> <span class="gray">Ali, S.N.,
+Agrawal, S., Sharma, A., Phartiyal, B., Morthekai, P., Govil, P.,
+Bhushan, R., Farooqui, S.,</span> <span class="blue">Jena,
+P.S.</span><span class="gray">, Shivam, A.</span><br>
+<i style="color:black;">Quaternary Research</i><span class="gray">,
+1–17</span><br> <span class="gray">DOI:
+<a href="https://doi.org/10.1017/qua.2020.22">https://doi.org/10.1017/qua.2020.22</a></span></p>
+</div>
+</div>
+<div id="section-6" class="section level3">
+<h3><span class="year">2019</span></h3>
+<div class="publication">
+<p><b>Spatio-temporal variations in ecosystem and CO₂ sequestration in
+coastal lagoon: A foraminiferal perspective</b><br> <span
+class="gray">Barik, S.S., Singh, R.K.,</span> <span class="blue">Jena,
+P.S.</span><span class="gray">, Tripathy, S., Sharma, K., Prusty,
+P.</span><br> <i style="color:black;">Marine Micropaleontology</i><br>
+<span class="gray">DOI:
+<a href="https://doi.org/10.1016/j.marmicro.2019.02.003">https://doi.org/10.1016/j.marmicro.2019.02.003</a></span></p>
+</div>
+</div>
+</div>
+<hr />
+</div>
+<div id="conference-publications-international" class="section level2">
+<h2>🎤 Conference Publications (International)</h2>
+<div class="timeline">
+<div id="section-7" class="section level3">
+<h3><span class="year">2023</span></h3>
+<div class="publication">
+<p><b>The Atlantic meridional overturning circulation during Heinrich
+Stadial 1</b><br> <span class="blue">Jena, P.S.</span><span
+class="gray">, Chiessi, C.M., Voigt, I., Mulitza, S.</span><br>
+<b><i>AGU Fall Meeting</i></b><span class="gray"> (OS43A-03)</span></p>
+</div>
+</div>
+<div id="section-8" class="section level3">
+<h3><span class="year">2022</span></h3>
+<div class="publication">
+<p><b>Paleo Thermocline Ventilation and Upper Ocean Water Mass Evolution
+of the Equatorial Indian Ocean during the Last 44ka</b><br> <span
+class="gray">Jena, S.K., Bhushan, R., Bharti, N.,</span> <span
+class="blue">Jena, P.S.</span><br> <b><i>AGU Fall Meeting</i></b><span
+class="gray"> (PP15B-03)</span></p>
+</div>
+</div>
+<div id="section-9" class="section level3">
+<h3><span class="year">2021</span></h3>
+<div class="publication">
+<p><b>10Be/9Be Ratio Variation in the Central Indian Ocean during the
+Last 43 ka; Implication to Past Geomagnetic Field Intensity
+Changes</b><br> <span class="blue">Jena, P.S.</span><span class="gray">,
+Bhushan, R., Ajay, S., Bharti, N., Sudheer, A.K.</span><br> <b><i>AGU
+Fall Meeting</i></b><span class="gray"> (GP43A-05)</span></p>
+</div>
+<div class="publication">
+<p><b>First Radiocarbon Evidence of Poorly Ventilated Deep Central
+Indian Ocean during the Last Glaciation</b><br> <span
+class="gray">Bharti, N., Bhushan, R., Skinner, L., Muruganantham,
+M.,</span> <span class="blue">Jena, P.S.</span><span class="gray">,
+Dabhi, A., Shivam, A.</span><br> <b><i>AGU Fall Meeting</i></b><span
+class="gray"> (OS21A-09)</span></p>
+</div>
+</div>
+<div id="section-10" class="section level3">
+<h3><span class="year">2020</span></h3>
+<div class="publication">
+<p><b>Seasonal freshwater flux to the Bengal basin during late Holocene
+solar minima events</b><br> <span class="gray">Ghosh, P., Banerjee, Y.,
+Sarkar, A., Pathak, P., Bhushan, R.,</span> <span class="blue">Jena,
+P.S.</span><span class="gray">, Sen, P.K.</span><br> <b><i>AGU Fall
+Meeting</i></b><span class="gray"> (PP022-0010)</span></p>
+</div>
+</div>
+</div>
+<style>
+.timeline {
+  border-left: 3px solid #ccc;
+  padding-left: 20px;
+  margin-left: 10px;
+}
+.timeline .year {
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #f5f5f5;
+  padding: 6px 10px;
+  border-radius: 6px;
+  display: inline-block;
+  margin-top: 30px;
+}
+.publication {
+  margin: 20px 0;
+  padding-left: 12px;
+  border-left: 2px solid #007BFF;
+}
+.publication a {
+  color: #007BFF;
+}
+.publication b {
+  color: #212529;
+}
+.gray {
+  color: gray;
+}
+.blue {
+  color: darkblue;
+  font-weight: bold;
+}
+</style>
+</div>
 </div>
 
 

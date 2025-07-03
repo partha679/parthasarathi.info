@@ -310,146 +310,214 @@ $(document).ready(function () {
 </div>
 
 
-<!-- Floating menu in top-right corner -->
-<div style="
+<style>
+.presentation-entry {
+  margin-bottom: 12px;
+  padding: 10px 14px;
+  background-color: #fdfdfd;
+  border-left: 4px solid #0275d8;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  transition: background 0.3s, transform 0.2s;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.presentation-entry:hover {
+  background-color: #f2faff;
+  transform: scale(1.005);
+}
+.presentation-box img {
+  width: 360px;
+  height: auto;
+  max-width: 100%;
+  border-radius: 6px;
+  box-shadow: 1px 1px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+.presentation-box img:hover {
+  transform: scale(1.02);
+}
+.floating-menu {
   position: fixed;
   top: 60px;
   right: 100px;
-  background-color: #f9f9f9;
+  background-color: #ffffffee;
   border: 1px solid #ccc;
-  padding: 12px;
+  padding: 10px;
   z-index: 9999;
-  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
-  font-size: 14px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.15);
+  font-size: 13px;
   border-radius: 8px;
-  width: 200px;
-">
+  width: 180px;
+  transition: box-shadow 0.3s;
+}
+.floating-menu:hover {
+  box-shadow: 4px 4px 18px rgba(0,0,0,0.2);
+}
+.floating-menu a {
+  display: block;
+  margin: 5px 0;
+  text-decoration: none;
+  color: #0275d8;
+}
+</style>
+<!-- Floating menu -->
+<div class="floating-menu">
 <p><b>📌 Menu</b><br> <a href="#Invited Talks /Lecture"> Invited
-talks</a><br> <a href="#Presentations at Conferences"> Conference
-presentation</a><br> <a href="#Workshops"> Workshops</a><br></p>
+talks</a> <a href="#Presentations at Conferences"> Conference
+presentation</a> <a href="#Workshops"> Workshops</a></p>
 </div>
-<p><a name="Invited talks"></a></p>
+<p><a name="Invited Talks /Lecture"></a></p>
 <div id="invited-talks-lectures" class="section level2">
 <h2>Invited Talks /Lectures 📖</h2>
+<br>
+<style>
+.hover-image {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.hover-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+</style>
 <div
-style="display: flex; justify-content: center; gap: 30px; margin-top: 20px;">
+style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
 <!-- Image 1 -->
-<div style="text-align: center;">
-<h4>
-🌊 Ravenshaw University, Jan 2025
-</h4>
-<img src="Images/RAV.jpg" alt="Amazon Plume" width="420" height="300">
+<div style="flex: 0 1 calc(50% - 20px); text-align: center;">
+<a href="Images/RAV.jpg" data-lightbox="gallery" data-title="Ravenshaw University">
+<img src="Images/RAV.jpg" alt="Ravenshaw University" 
+     class="hover-image"
+     style="width: 100%; height: 280px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+</a>
+<p style="margin-top: 8px; font-weight: bold;">
+Ravenshaw University
+</p>
 </div>
 <!-- Image 2 -->
-<div style="text-align: center;">
-<h4>
-FM Autonomous college
-</h4>
-<img src="Images/FMC.jpg" alt="Satellite View" width="420" height="300">
+<div style="flex: 0 1 calc(50% - 20px); text-align: center;">
+<a href="Images/FMC.jpg" data-lightbox="gallery" data-title="FM Autonomous College">
+<img src="Images/FMC.jpg" alt="FM Autonomous College" 
+     class="hover-image"
+     style="width: 100%; height: 280px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+</a>
+<p style="margin-top: 8px; font-weight: bold;">
+FM Autonomous College
+</p>
 </div>
 </div>
-<p><br></p>
-<ul>
-<li>Invited talk on “Deglacial evolution in ventilation of the western
+<div class="presentation-entry">
+Invited talk on “Deglacial evolution in ventilation of the western
 equatorial Atlantic Ocean and its link to atmospheric CO2 changes” at
-the Indian Institute of Technology Bhubaneswar on 4th March 2024.</li>
-<li>Invited keynote presentation on “Coupling between deep ocean
-circulation and terrestrial climate change: lessons from the past” at
-the Fakir Mohan University, Balasore on 9th January 2025.</li>
-<li>Invited extramural lecture on “Decoding Earth’s Climate History:
+the Indian Institute of Technology Bhubaneswar on 4th March 2024.
+</div>
+<div class="presentation-entry">
+Invited keynote presentation on “Coupling between deep ocean circulation
+and terrestrial climate change: lessons from the past” at the Fakir
+Mohan University, Balasore on 9th January 2025.
+</div>
+<div class="presentation-entry">
+Invited extramural lecture on “Decoding Earth’s Climate History:
 Techniques and Insights” at Fakir Mohan Autonomous College, Balasore on
-13th January 2025.</li>
-<li>Invited extramural lecture on “Unravelling past climate change
-through Himalayan Landforms” at Ravenshaw University, Cuttack on 16th
-April 2025.</li>
-<li>Invited extramural lecture on “Glaciers and climate change” at
-Adikabi Saraladas Degree College, Tirtol on 17th April 2025.</li>
-</ul>
+13th January 2025.
+</div>
+<div class="presentation-entry">
+Invited extramural lecture on “Unravelling past climate change through
+Himalayan Landforms” at Ravenshaw University, Cuttack on 16th April
+2025.
+</div>
+<div class="presentation-entry">
+Invited extramural lecture on “Glaciers and climate change” at Adikabi
+Saraladas Degree College, Tirtol on 17th April 2025.
+</div>
+<p><a name="Presentations at Conferences"></a></p>
 <p><br></p>
-<p><a name="Conference presentation"></a></p>
 </div>
 <div id="presentations-at-conferences" class="section level2">
 <h2>Presentations at Conferences 🧑‍💼</h2>
 <div
-style="display: flex; justify-content: center; gap: 30px; margin-top: 20px;">
-<!-- Image 1 -->
-<div style="text-align: center;">
-<h4>
+style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+<!-- FM University -->
+<div style="flex: 0 1 calc(50% - 20px); text-align: center;">
+<a href="Images/FMU.JPG" data-lightbox="gallery" data-title="FM University, Jan 2025">
+<img src="Images/FMU.JPG" alt="FM University" 
+           style="width: 100%; height: 280px; object-fit: cover; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+</a>
+<p style="margin-top: 8px; font-weight: bold;">
 🌊 FM University, Jan 2025
-</h4>
-<img src="Images/FMU.JPG" alt="Amazon Plume" width="420" height="300">
+</p>
 </div>
-<!-- Image 2 -->
-<div style="text-align: center;">
-<h4>
-🛰️NIO, Nov 2024
-</h4>
-<img src="Images/NIO.jpg" alt="Satellite View" width="420" height="300">
+<!-- NIO -->
+<div style="flex: 0 1 calc(50% - 20px); text-align: center;">
+<a href="Images/NIO.jpg" data-lightbox="gallery" data-title="NIO, Nov 2024">
+<img src="Images/NIO.jpg" alt="NIO" 
+           style="width: 100%; height: 280px; object-fit: cover; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+</a>
+<p style="margin-top: 8px; font-weight: bold;">
+🛰️ NIO, Nov 2024
+</p>
 </div>
 </div>
-<p><br></p>
-<ul>
-<li>Topic: Deglacial evolution in ventilation of the western equatorial
-Atlantic Ocean and its link to atmospheric CO2 changes.
-<ul>
-<li>TROPQUA-2024</li>
-<li>Mode: Presentation (Offline/ In-person) on 3rd Nov 2024</li>
-</ul></li>
-<li>Topic: The Atlantic meridional overturning circulation during
-Heinrich Stadial 1
-<ul>
-<li>AGU fall meeting-2023</li>
-<li>Mode: Presentation (Offline/In-person) on 14 Dec 2023</li>
-</ul></li>
-<li>Topic: Past geomagnetic field intensity reconstructed using
-authigenic 10Be/9Be
-<ul>
-<li>Frontiers in Geoscience Research Conference (FGRC-23), PRL,
-Ahmedabad</li>
-<li>Mode: Presentation (Offline/In-person) on 03 Feb 2023</li>
-</ul></li>
-<li>Topic: 10Be/9Be Ratio Variation in the Central Indian Ocean during
-the Last 43 ka; Implication to Past Geomagnetic Field Intensity Changes
-<ul>
-<li>AGU fall meeting-21</li>
-<li>Mode: Presentation (Online) on 17 Dec 2021</li>
-</ul></li>
-<li>Topic: Spatial variability and residence time of beryllium isotopes
-in the Indian Ocean: Role of oceanic processes
-<ul>
-<li>Frontiers in Geoscience Research Conference (FGRC-21), PRL,
-Ahmedabad</li>
-<li>Mode: Presentation (Online) on 28 Sept 2021</li>
-</ul></li>
-<li>Topic: Role of In-situ and Meteoric 10Be in Quaternary Glaciation,
-Marine Chronology, and Paleomagnetic Reconstruction
-<ul>
-<li>7th national conference of Ocean Society of India (OSICON-21),
-NCPOR, Goa</li>
-<li>Mode: Presentation (Online) on 14 Aug 2021</li>
-</ul></li>
-<li>Topic: “Quaternary Glaciation Studies using terrestrial cosmogenic
-radionuclides”
-<ul>
-<li>Second National Conference and Field Workshop on “Recent Studies on
-Geology of Kachchh Basin”, KSKV Kachchh University, Gujarat</li>
-<li>Mode: Poster (Offline/In-person) on 30 Dec 2018</li>
-</ul></li>
-</ul>
+<div class="presentation-entry">
+Topic: Deglacial evolution in ventilation of the western equatorial
+Atlantic Ocean and its link to atmospheric CO2 changes. <br> -
+TROPQUA-2024 <br> - Mode: Presentation (Offline/ In-person) on 3rd Nov
+2024
+</div>
+<div class="presentation-entry">
+Topic: The Atlantic meridional overturning circulation during Heinrich
+Stadial 1 <br> - AGU fall meeting-2023 <br> - Mode: Presentation
+(Offline/In-person) on 14 Dec 2023
+</div>
+<div class="presentation-entry">
+Topic: Past geomagnetic field intensity reconstructed using authigenic
+10Be/9Be <br> - Frontiers in Geoscience Research Conference (FGRC-23),
+PRL, Ahmedabad <br> - Mode: Presentation (Offline/In-person) on 03 Feb
+2023
+</div>
+<div class="presentation-entry">
+Topic: 10Be/9Be Ratio Variation in the Central Indian Ocean during the
+Last 43 ka; Implication to Past Geomagnetic Field Intensity Changes <br>
+- AGU fall meeting-21 <br> - Mode: Presentation (Online) on 17 Dec 2021
+</div>
+<div class="presentation-entry">
+Topic: Spatial variability and residence time of beryllium isotopes in
+the Indian Ocean: Role of oceanic processes <br> - Frontiers in
+Geoscience Research Conference (FGRC-21), PRL, Ahmedabad <br> - Mode:
+Presentation (Online) on 28 Sept 2021
+</div>
+<div class="presentation-entry">
+Topic: Role of In-situ and Meteoric 10Be in Quaternary Glaciation,
+Marine Chronology, and Paleomagnetic Reconstruction <br> - 7th national
+conference of Ocean Society of India (OSICON-21), NCPOR, Goa <br> -
+Mode: Presentation (Online) on 14 Aug 2021
+</div>
+<div class="presentation-entry">
+Topic: “Quaternary Glaciation Studies using terrestrial cosmogenic
+radionuclides” <br> - Second National Conference and Field Workshop on
+“Recent Studies on Geology of Kachchh Basin”, KSKV Kachchh University,
+Gujarat <br> - Mode: Poster (Offline/In-person) on 30 Dec 2018
+</div>
 <p><a name="Workshops"></a></p>
+<p><br></p>
 </div>
 <div id="workshops" class="section level2">
 <h2>Workshops 🧑‍🏫</h2>
-<ul>
-<li>Workshop on Paleoclimate data assimilation (Online; 21-23 Aug 2023)
-organised by Northern Arizona University.</li>
-<li>Webinar &amp; Workshop on Proxy System Modeling for Lacustrine
-Archives (Online; 13 Apr 2023)</li>
-<li>Workshop on Isotopes in Earth, Ocean &amp; Atmospheric Sciences
-organised by the National Institute of Oceanography, Goa</li>
-<li>Isocamp2021 organised by the Centre for Stable Isotopes, University
-of New Mexico (Online)</li>
-</ul>
+<div class="presentation-entry">
+Workshop on Paleoclimate data assimilation (Online; 21-23 Aug 2023)
+organised by Northern Arizona University.
+</div>
+<div class="presentation-entry">
+Webinar &amp; Workshop on Proxy System Modeling for Lacustrine Archives
+(Online; 13 Apr 2023)
+</div>
+<div class="presentation-entry">
+Workshop on Isotopes in Earth, Ocean &amp; Atmospheric Sciences
+organised by the National Institute of Oceanography, Goa
+</div>
+<div class="presentation-entry">
+Isocamp2021 organised by the Centre for Stable Isotopes, University of
+New Mexico (Online)
+</div>
 </div>
 
 
