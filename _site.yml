@@ -27,8 +27,8 @@ navbar:
           href: youtube.html
         - text: "Social media"
           href: Social_media.html
-    - text: "About"
-      href: about.html
+        - text: "My story"
+          href: my_story.html
     - text: "Contact"
       href: Contact.html
 
