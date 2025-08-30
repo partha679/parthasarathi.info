@@ -183,7 +183,7 @@ body {
   Note: The map is for visual exploration only and does not necessarily represent political boundaries.
 </div>
 
-```{r, echo=FALSE, results='asis'}
+```{r, echo=FALSE, results='asis', warning=FALSE}
 library(leaflet)
 library(leaflet.extras)
 
